@@ -1,29 +1,27 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-Demais diretrizes constam no Moodle.
-
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto)*. !!** 
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2023.1_G1_ProjetoPandora*. !!** 
- 
- (Apague esses comentários)
-
-# Nome do Projeto
+# My Market
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 07<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+|Matrícula | Aluno | GitHub | 📸 |
+| -- | -- | -- | -- |
+| 211043638 | Artur Rodrigues Sousa Alves | [ArturRSA19](https://github.com/ArturRSA19) | <img src="https://github.com/ArturRSA19.png" width=70> |
+| 160007615 | Guilherme Basilio do Espirito Santo | [GuilhermeBES](https://github.com/GuilhermeBES) | <img src="https://github.com/GuilhermeBES.png" width=70> |
+| 180113496 | Guilherme de Oliveira Mendes | [GG555-13](https://github.com/GG555-13) | <img src="https://github.com/GG555-13.png" width=70> |
+| 211039789 | Guilherme Soares Rocha | [guilhermesoaress](https://github.com/guilhermesoaress) | <img src="https://github.com/guilhermesoaress.png" width=70> |
+| 200030264 | Guilherme Nishimura da Silva | [Guilherme-nishi](https://github.com/Guilherme-nishi) | <img src="https://github.com/Guilherme-nishi.png" width=70> |
+| 211061977 | João Víctor Costa Andrade | [jvcostta](https://github.com/jvcostta) | <img src="https://github.com/jvcostta.png" width=70> |
+| 180022512 | Lucas de Lima Spinosa dos Santos | [LucasSpinosa](https://github.com/LucasSpinosa) | <img src="https://github.com/LucasSpinosa.png" width=70> |
+| 211062259 | Mateus Orlando Medeiros Ribeiro | [MateusPy](https://github.com/MateusPy) | <img src="https://github.com/MateusPy.png" width=70> |
+| 211039635 | Miguel Matos Costa de Frias Barbosa | [migueldefrias](https://github.com/migueldefrias) | <img src="https://github.com/migueldefrias.png" width=70> |
+| 190094478 | Pedro Henrique Nogueira Bragança | [pehenobra2](https://github.com/pehenobra2) | <img src="https://github.com/pehenobra2.png" width=70> |
+| 190115548 | Pedro Lucas Garcia | [AlefMemTav](https://github.com/AlefMemTav) | <img src="https://github.com/AlefMemTav.png" width=70> |
+| 200027158 | Rodrigo Edmar Wright Dos Santos | [RodrigoWright](https://github.com/RodrigoWright) | <img src="https://github.com/RodrigoWright.png" width=70> |
+| 190020407 | Thiago Vivan Bastos | [thiago-vivan](https://github.com/thiago-vivan) | <img src="https://github.com/thiago-vivan.png" width=70> |
 
 ## Sobre 
-Contextualize, usando referências, links, e outros materiais como fontes.
+My Market é a solução definitiva para simplificar suas compras diárias. Com uma interface intuitiva e recursos inteligentes, tornamos a experiência de compra mais eficiente e agradável.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 Adicione 2 ou mais screenshots em termos de artefatos da Primeira Entrega.
