@@ -28,3 +28,7 @@
     - [4.1. Módulo Estilos e Padrões Arquiteturais](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md)
     - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
+
+- **Atas de Reunião**
+  - [03/04/2024](/Atas/03_04_2024.md)
+  - [04/04/2024](/Atas/04_04_2024.md)
