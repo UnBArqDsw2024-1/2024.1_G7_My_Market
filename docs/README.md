@@ -28,13 +28,15 @@ My Market é a solução definitiva para simplificar suas compras diárias. Com 
 
 **imagem 1 - Mapa mental**
 
-![](../Imagens/mapa_mental.png)
+![](./Imagens/mapa_mental.png)
 
 **imagem 2 - Richpicture**
-![](../Imagens/Richpicture_grupo7.png)
+
+![](./Imagens/Richpicture_grupo7.png)
 
 **imagem 3 - BPMN metodologia**
-![](../Imagens/sprintBPMN.png)
+
+![](./Imagens/BPMN/sprintBPMN.jpg)
 
 
 </center>
