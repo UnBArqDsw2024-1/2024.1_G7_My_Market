@@ -1,0 +1,10 @@
+:root {
+    --base-font-size: 14px;
+    --theme-color   : white;
+    --base-background-color: #012E40;
+    --base-color           : white;
+    --base-font-family     : monospace;
+    --selection-color      : #D6C82D;
+    --sidebar-background   : #015958
+  }
+  
