@@ -40,6 +40,15 @@ My Market é a solução definitiva para simplificar suas compras diárias. Com 
 
 
 </center>
+
+## Histórico de Versões
+
+| Versão |     Data    | Descrição   | Autor(es) | Revisor(es) |
+| ------ | ----------- | ----------- | --------- | ----------- |
+| `1.0`  | 26/03/2024 | Criação do Documento | [ Mateus Orlando ](https://github.com/MateusPy)| --- | 
+| `1.1`  | 27/03/2024 | Alterada página com participantes | [ Artur Rodrigues ](https://github.com/ArturRSA19)| --- |
+| `1.2`  | 09/04/2024 | Adicionando imagens da primeira entrega | [João Costa](https://github.com/jvcostta) | --- |
+| `1.1`  | 12/04/2024 | Alterando estilo do documento | [ Artur Rodrigues ](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) & [ Mateus Orlando ](https://github.com/MateusPy) |
 <!--
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)
 Adicione 2 ou mais screenshots em termos de artefatos da Segunda Entrega.
@@ -67,3 +76,5 @@ Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados
 ## Informações Complementares 
 .
 Quaisquer outras informações adicionais podem ser descritas nessa seção.
+
+
