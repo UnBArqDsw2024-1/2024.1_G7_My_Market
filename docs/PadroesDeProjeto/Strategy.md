@@ -23,6 +23,68 @@ Colocar imagem
 
 ### 3.2. Código
 
+```java
+// Interface da Estratégia
+interface EstrategiaPagamento {
+    void processarPagamento(double valor);
+}
+
+// Estratégia Concreta: Pagamento com Cartão de Crédito
+class PagamentoCartaoCredito implements EstrategiaPagamento {
+    @Override
+    public void processarPagamento(double valor) {
+        System.out.println("Processando pagamento de R$" + valor + " via Cartão de Crédito.");
+    }
+}
+
+// Estratégia Concreta: Pagamento com PayPal
+class PagamentoPayPal implements EstrategiaPagamento {
+    @Override
+    public void processarPagamento(double valor) {
+        System.out.println("Processando pagamento de R$" + valor + " via PayPal.");
+    }
+}
+
+// Estratégia Concreta: Pagamento com Transferência Bancária
+class PagamentoTransferenciaBancaria implements EstrategiaPagamento {
+    @Override
+    public void processarPagamento(double valor) {
+        System.out.println("Processando pagamento de R$" + valor + " via Transferência Bancária.");
+    }
+}
+
+// Contexto
+class Pagamento {
+    private EstrategiaPagamento estrategia;
+
+    public void setEstrategia(EstrategiaPagamento estrategia) {
+        this.estrategia = estrategia;
+    }
+
+    public void processarPagamento(double valor) {
+        this.estrategia.processarPagamento(valor);
+    }
+}
+
+// Cliente
+public class Main {
+    public static void main(String[] args) {
+        Pagamento pagamento = new Pagamento();
+
+        // Pagamento via Cartão de Crédito
+        pagamento.setEstrategia(new PagamentoCartaoCredito());
+        pagamento.processarPagamento(100.0);
+
+        // Pagamento via PayPal
+        pagamento.setEstrategia(new PagamentoPayPal());
+        pagamento.processarPagamento(200.0);
+
+        // Pagamento via Transferência Bancária
+        pagamento.setEstrategia(new PagamentoTransferenciaBancaria());
+        pagamento.processarPagamento(300.0);
+    }
+}
+```
 
 
 ## Referências
@@ -33,3 +95,4 @@ Colocar imagem
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adicionando código | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
