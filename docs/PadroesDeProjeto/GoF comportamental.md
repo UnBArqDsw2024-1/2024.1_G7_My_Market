@@ -2,15 +2,27 @@
 
 ## 1. Introdução
 
-Para o processamento de pedidos, usaremos o padrão Command, onde diferentes comandos representam diferentes operações (adicionar item, remover item, etc.).
+O padrão Command encapsula uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, filas ou logs de solicitações, e suporte operações que podem ser desfeitas.
 
 ## 2. Objetivo
 
-
+O objetivo do padrão Command é desacoplar o objeto que invoca a operação daquele que conhece como executá-la. Isso permite maior flexibilidade no design, facilitando a implementação de operações como desfazer (undo), refazer (redo) e registro de comandos.
 
 ## 3. Implementação
 
-    // Command Interface
+
+### 3.1. Diagrama UML
+Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
+
+<!--- 
+Colocar imagem
+-->
+
+<h6 align = "center">Figura 01</h6>
+
+### 3.2. Código
+
+// Command Interface
     interface Command {
         void execute();
     }
@@ -77,20 +89,6 @@ Para o processamento de pedidos, usaremos o padrão Command, onde diferentes com
             orderProcessor.execute(removeItemCommand);
         }
     }
-
-
-### 3.1. Diagrama UML
-Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
-
-<!--- 
-Colocar imagem
--->
-
-<h6 align = "center">Figura 01</h6>
-
-### 3.2. Código
-
-
 
 ## Referências
 
