@@ -16,7 +16,9 @@ Cada uma dessas etapas é responsabilidade de um handler específico. O padrão 
 ## 3. Implementação
 ...
 ### 3.1. Diagrama UML
-Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
+
+
+Modelagem a seguir foi criada utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/) pelos alunos [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan).
 
 ![image](https://github.com/user-attachments/assets/767e17d8-0009-4954-a945-230d875ed61e)
 
@@ -24,6 +26,8 @@ Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com
 <h6 align = "center">Figura 01: Desconto. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
 
 ### 3.2. Código
+
+O código em java a seguir foi desenvolvido, pelos alunos [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan).
 
 ```java
 public interface Handler {
@@ -126,6 +130,7 @@ public class Request {
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
-| 1.0    | Inicio da estrutura do documento | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
-| 2.0    | Adição o código da implementação do GoF  | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
-| 3.0    | Adição do Diagrama   | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
+| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
+| 2.0    | Adição o código da implementação do GoF.  | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
+| 3.0    | Adição do Diagrama.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
+| 3.1    | Pequenos Ajustes nos textos do diagrama e no do código.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
