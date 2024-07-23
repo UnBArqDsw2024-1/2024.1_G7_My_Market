@@ -2,11 +2,11 @@
 
 ## 1. Introdução
 
-
+O Prototype é um padrão de projeto criacional que permite copiar objetos existentes sem fazer seu código ficar dependente de suas classes.
 
 ## 2. Objetivo
 
-
+O padrão Prototype delega o processo de clonagem para o próprio objeto que está sendo clonado. O padrão declara um interface comum para todos os objetos que suportam clonagem. Essa interface permite que você clone um objeto sem acoplar seu código à classe daquele objeto. Geralmente, tal interface contém apenas um único método clonar.
 
 ## 3. Implementação
 
@@ -15,9 +15,8 @@
 ### 3.1. Diagrama UML
 Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
 
-<!--- 
-Colocar imagem
--->
+![image](https://github.com/user-attachments/assets/953c1118-bf4e-48f6-9160-52f05701f21b)
+
 
 <h6 align = "center">Figura 01 Fonte: Artur Rodrigues Sousa Alves e João Víctor Costa Andrade</h6>
 
@@ -93,3 +92,4 @@ public class Client {
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
 | 1.1 | Adicionando código | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
+| 1.2 | Finalizando documento| [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
