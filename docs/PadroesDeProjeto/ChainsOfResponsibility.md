@@ -20,11 +20,101 @@ Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com
 
 ![image](https://github.com/user-attachments/assets/831707dd-34a5-410c-9df0-d27fb7a16c89)
 
-<h6 align = "center">Figura x: Desconto. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 01: Desconto. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan</h6>
 
 ### 3.2. Código
 
-x
+```java
+public interface Handler {
+    Handler setNext(Handler handler);
+    String handle(Request request);
+}
+
+public abstract class BaseHandler implements Handler {
+    private Handler nextHandler;
+
+    @Override
+    public Handler setNext(Handler handler) {
+        this.nextHandler = handler;
+        return handler;
+    }
+
+    @Override
+    public String handle(Request request) {
+        if (this.nextHandler != null) {
+            return this.nextHandler.handle(request);
+        }
+        return null;
+    }
+}
+
+public class EstoqueHandler extends BaseHandler {
+    @Override
+    public String handle(Request request) {
+        if (request.isEstoqueDisponivel()) {
+            System.out.println("Estoque verificado.");
+            return super.handle(request);
+        } else {
+            return "Pedido rejeitado: estoque insuficiente.";
+        }
+    }
+}
+
+public class PagamentoHandler extends BaseHandler {
+    @Override
+    public String handle(Request request) {
+        if (request.isPagamentoValidado()) {
+            System.out.println("Pagamento validado.");
+            return super.handle(request);
+        } else {
+            return "Pedido rejeitado: pagamento não validado.";
+        }
+    }
+}
+
+public class GerenteHandler extends BaseHandler {
+    @Override
+    public String handle(Request request) {
+        if (request.isAprovadoPeloGerente()) {
+            System.out.println("Aprovado pelo gerente.");
+            return super.handle(request);
+        } else {
+            return "Pedido rejeitado: não aprovado pelo gerente.";
+        }
+    }
+}
+
+public class Request {
+    private boolean estoqueDisponivel;
+    private boolean pagamentoValidado;
+    private boolean aprovadoPeloGerente;
+
+    public boolean isEstoqueDisponivel() {
+        return estoqueDisponivel;
+    }
+
+    public void setEstoqueDisponivel(boolean estoqueDisponivel) {
+        this.estoqueDisponivel = estoqueDisponivel;
+    }
+
+    public boolean isPagamentoValidado() {
+        return pagamentoValidado;
+    }
+
+    public void setPagamentoValidado(boolean pagamentoValidado) {
+        this.pagamentoValidado = pagamentoValidado;
+    }
+
+    public boolean isAprovadoPeloGerente() {
+        return aprovadoPeloGerente;
+    }
+
+    public void setAprovadoPeloGerente(boolean aprovadoPeloGerente) {
+        this.aprovadoPeloGerente = aprovadoPeloGerente;
+    }
+}
+```
+
 
 
 ## Referências
@@ -35,4 +125,5 @@ x
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
-| 1.0    | Inicio da estrutura do documento | Guilherme Nishimura |x | 22/07/2023| x|
+| 1.0    | Inicio da estrutura do documento | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
+| 2.0    | Adição o código da implementação do GoF  | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
