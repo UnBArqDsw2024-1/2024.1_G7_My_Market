@@ -23,11 +23,11 @@ Modelagem a seguir foi criada utilizando a ferramenta online [Lucidchart](https:
 ![image](https://github.com/user-attachments/assets/767e17d8-0009-4954-a945-230d875ed61e)
 
 
-<h6 align = "center">Figura 01: Desconto. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
+<h6 align = "center">Figura 01: Diagrama de Classes utilizando o padrão comportamental Chains of Responsibility. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
 
 ### 3.2. Código
 
-O código em java a seguir foi desenvolvido, pelos alunos [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan).
+O código em java a seguir foi desenvolvido pelos alunos [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan).
 
 ```java
 public interface Handler {
