@@ -18,9 +18,10 @@ Cada uma dessas etapas é responsabilidade de um handler específico. O padrão 
 ### 3.1. Diagrama UML
 Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
 
-![image](https://github.com/user-attachments/assets/831707dd-34a5-410c-9df0-d27fb7a16c89)
+![image](https://github.com/user-attachments/assets/767e17d8-0009-4954-a945-230d875ed61e)
 
-<h6 align = "center">Figura 01: Desconto. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan</h6>
+
+<h6 align = "center">Figura 01: Desconto. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
 
 ### 3.2. Código
 
@@ -127,3 +128,4 @@ public class Request {
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
 | 2.0    | Adição o código da implementação do GoF  | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
+| 3.0    | Adição do Diagrama   | Mateus Orlando, Pedro Lucas e Thiago Vivan | - | 22/07/2024 | x |
