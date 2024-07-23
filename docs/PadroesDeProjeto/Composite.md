@@ -15,7 +15,8 @@ O principal objetivo do padrão Composite é permitir que os clientes tratem obj
 ### 3.1. Diagrama UML
 
 
-<
+<![image](https://github.com/user-attachments/assets/93ed98a1-1753-42fc-83e4-7316096b5740)>
+
 <h6 align = "center">Figura 01 Fonte: Artur Rodrigues Sousa Alves e João Víctor Costa Andrade</h6>
 
 ### 3.2. Código
@@ -123,3 +124,4 @@ public class Program {
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [João Costa](https://github.com/jvcostta) | [Artur Rodrigues](https://github.com/ArturRSA19)| 22/07/2024 | 22/07/2024 |
 | 1.2 | Adicionando codigo | [João Costa](https://github.com/jvcostta) | [Artur Rodrigues](https://github.com/ArturRSA19)| 22/07/2024 | 22/07/2024 |
+| 1.3 | Adicionando imagem e finalizando documento | [João Costa](https://github.com/jvcostta) | [Artur Rodrigues](https://github.com/ArturRSA19)| 22/07/2024 | 22/07/2024 |
