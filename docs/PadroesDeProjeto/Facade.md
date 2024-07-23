@@ -1,4 +1,4 @@
-# Builder - GoF Criacional
+# Facade - GoF Estrutural
 
 ## 1. Introdução
 
