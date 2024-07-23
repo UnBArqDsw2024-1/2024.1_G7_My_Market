@@ -24,7 +24,63 @@ Colocar imagem
 ### 3.2. Código
 
 ```java
+public interface Prototype {
+    String getColor();
+    Prototype clone();
+}
 
+public class Button implements Prototype {
+    private int x;
+    private int y;
+    private String color;
+
+    public Button(int x, int y, String color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    }
+
+    public Button(Button prototype) {
+        if (prototype != null) {
+            this.x = prototype.x;
+            this.y = prototype.y;
+            this.color = prototype.color;
+        }
+    }
+
+    @Override
+    public String getColor() {
+        return this.color;
+    }
+
+    @Override
+    public Prototype clone() {
+        return new Button(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Button [x=" + x + ", y=" + y + ", color=" + color + "]";
+    }
+}
+
+public class Client {
+    public static void main(String[] args) {
+        PrototypeRegistry registry = new PrototypeRegistry();
+
+        // Adicionando protótipo ao registro
+        Button landingButton = new Button(10, 40, "red");
+        registry.addItem("LandingButton", landingButton);
+
+        // Clonando protótipo pelo ID
+        Button buttonById = (Button) registry.getById("LandingButton");
+        System.out.println(buttonById);
+
+        // Clonando protótipo pela cor
+        Button buttonByColor = (Button) registry.getByColor("red");
+        System.out.println(buttonByColor);
+    }
+}
 ```
 
 
@@ -36,3 +92,4 @@ Colocar imagem
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adicionando código | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
