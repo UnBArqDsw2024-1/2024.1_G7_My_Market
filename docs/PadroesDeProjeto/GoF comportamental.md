@@ -17,6 +17,47 @@ Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
 <div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/GuilhermeS_Miguel_GuilhermeB/Entrega03/docs/Imagens/Diagramas/DiagramaCommand.png" alt="Diagrama UML">
 <p>Figura 1 - Diagrama UML<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
+
+#### Descrição das classes e interfaces:
+
+Command (Interface)
+
+Método: execute(): Define a interface comum para todos os comandos. Cada comando concreto deve implementar este método.
+
+
+AddItemCommand (Classe Concreta)
+
+- Atributos:
+- cart: Cart: Referência ao carrinho de compras onde o item será adicionado.
+- item: String: O item a ser adicionado.
+- Método: execute(): Implementa a lógica para adicionar um item ao carrinho.
+
+RemoveItemCommand (Classe Concreta)
+
+- Atributos:
+- cart: Cart: Referência ao carrinho de compras de onde o item será removido.
+- item: str: O item a ser removido.
+- Método: execute(): Implementa a lógica para remover um item do carrinho.
+
+Cart (Classe)
+
+- Atributos:
+- items: list: Lista de itens no carrinho.
+- Métodos:addItem(item: String): Adiciona um item ao carrinho. removeItem(item: String): Remove um item do carrinho. 
+
+OrderProcessor (Classe)
+
+- Métodos: execute(c: Command): Recebe um comando e executa seu método execute().
+
+#### Funcionamento do Padrão Command
+
+- O OrderProcessor atua como o invocador, que sabe como executar um comando, mas não sabe os detalhes do que o comando faz.
+- AddItemCommand e RemoveItemCommand são os comandos concretos que encapsulam a lógica de adição e remoção de itens no carrinho.
+- A interface Command define uma interface comum para todos os comandos.
+- A classe Cart representa o receptor, o objeto que realiza a ação real (adicionar ou remover itens).
+
+Este diagrama ilustra como o padrão Command separa a solicitação de uma ação do objeto que executa a ação, permitindo uma maior flexibilidade e reutilização de código.
+
 ### 3.2. Código
 
 // Command Interface
@@ -90,6 +131,9 @@ Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
 ## Referências
 
 > **Arquitetura e Desenho de Software - Aula GoFs Comportamentais**. Material de apoio em slides. Milene Serrano.
+
+> **Padrões de Projetos - Comportamentais - Command . Disponível em: <https://refactoring.guru/pt-br/design-patterns/command>. Acesso em: 23 de julho de 2024.**
+
 ## Versionamento
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
