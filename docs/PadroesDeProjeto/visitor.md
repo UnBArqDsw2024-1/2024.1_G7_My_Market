@@ -101,7 +101,7 @@ A imagem abaixo ilustra o resultado de um código que aplica descontos específi
 
 ![WhatsApp Image 2024-07-24 at 09 05 20](https://github.com/user-attachments/assets/416d95b7-b80f-4d26-ab72-069d9ec3b26f)
 
-<h6 align = "center">Figura 9:Discount B Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 9:Resultados Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 
 ## Referências
