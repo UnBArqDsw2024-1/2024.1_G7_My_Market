@@ -93,6 +93,8 @@ Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
 
 <h6 align = "center">Figura 7:Discount B Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
+## Resultado
+
 
 
 
