@@ -27,7 +27,7 @@ Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com
 <h6 align = "center">Figura 1: Desconto. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 ### 3.2. Código
-O código foi desenvolvido em  Java , Com a colaboração de [Pedro Henrique ](https://github.com/pehenobra2) e [Guilherme Nishimura](https://github.com/Guilherme-nishi).Para ter o codigo desenvolvido acesse aqui docs/PadroesDeProjeto/src.
+O código foi desenvolvido em  Java , Com a colaboração de [Pedro Henrique ](https://github.com/pehenobra2) e [Guilherme Nishimura](https://github.com/Guilherme-nishi).Para ter o codigo desenvolvido acesse [ aqui](https://github.com/UnBArqDsw2024-1/2024.1_G7_My_Market/tree/Guilherme_Pedro/Entrega03/docs/PadroesDeProjeto/src).
 
 #### 3.2.1 Interface client
 Essa interface Client se encontra no Main.JAVA
@@ -54,7 +54,7 @@ Essa interface visitor se encontra no Visitor.JAVA
 
 
 #### 3.2.4 Concret   visitor 1
-Concreter visitor Food (comida) que se encontra em Food.java
+Concret visitor Food (comida) que se encontra em Food.java
 
 ![image](https://github.com/user-attachments/assets/22ca9939-2d33-4d8b-93ee-f554db156d95)
 
@@ -63,7 +63,7 @@ Concreter visitor Food (comida) que se encontra em Food.java
 <h6 align = "center">Figura 5:Food Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.5 Concret  visitor 2
-Concrete visitor Eletronics (Eletronics) que se encontra em Eletronics.java
+Concret visitor Eletronics (Eletronics) que se encontra em Eletronics.java
 
 ![image](https://github.com/user-attachments/assets/d6ea0f82-2bf5-428a-b5f6-815d356d697f)
 
@@ -73,7 +73,7 @@ Concrete visitor Eletronics (Eletronics) que se encontra em Eletronics.java
 <h6 align = "center">Figura 6:Eletronics Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.6 Concret  Element 1
-Concrete element Discount A(Desconto a) que se encontra em DiscountA.java
+Concret element Discount A(Desconto a) que se encontra em DiscountA.java
 
 
 ![image](https://github.com/user-attachments/assets/45829ee2-15cc-434f-8024-16062ab00dd5)
@@ -84,7 +84,7 @@ Concrete element Discount A(Desconto a) que se encontra em DiscountA.java
 <h6 align = "center">Figura 7:Discount A Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.7 Concret  Element 2
-Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
+Concret element Discount B(Desconto B) que se encontra em DiscountB.java
 
 
 ![image](https://github.com/user-attachments/assets/974ae4de-fbfd-4da3-9e60-fcd93f086656)
