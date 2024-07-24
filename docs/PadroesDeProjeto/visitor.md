@@ -12,9 +12,7 @@ A classe que contém os elementos a serem visitados (por exemplo, uma coleção 
 O objeto Visitor visita cada elemento e executa a operação apropriada.
 
 
-Separação de preocupações: a estrutura do objeto não precisa saber sobre todas as operações possíveis.
-Extensibilidade: é fácil adicionar novas operações sem alterar as classes existentes.
-Manutenção simplificada: as operações estão centralizadas em classes Visitor.
+
 
 ## 2. Objetivo
 
