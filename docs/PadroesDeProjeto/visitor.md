@@ -1,13 +1,25 @@
 # Visitor - GoF Comportamental
 
 ## 1. Introdução
-.....
+
+
+O padrão Visitor permite separar a estrutura de um objeto da operação que é aplicada a ele. Isso é útil quando você precisa adicionar novas operações a uma classe sem modificar sua estrutura.
+
+
+Você define uma interface chamada Visitor com métodos para cada tipo de elemento que deseja visitar.
+Cada classe concreta implementa essa interface e fornece a implementação específica para cada método.
+A classe que contém os elementos a serem visitados (por exemplo, uma coleção de objetos) possui um método que aceita um objeto Visitor.
+O objeto Visitor visita cada elemento e executa a operação apropriada.
+
+
+Separação de preocupações: a estrutura do objeto não precisa saber sobre todas as operações possíveis.
+Extensibilidade: é fácil adicionar novas operações sem alterar as classes existentes.
+Manutenção simplificada: as operações estão centralizadas em classes Visitor.
 
 ## 2. Objetivo
 
 ...
 ## 3. Implementação
-...
 ### 3.1. Diagrama UML
 Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
 
@@ -25,7 +37,7 @@ Essa interface Client se encontra no Main.JAVA
 
 <h6 align = "center">Figura 2:Client Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
-#### 3.2.1 Interface Product
+#### 3.2.2 Interface Product
 Essa interface Product se encontra em Product.JAVA
 
 ![image](https://github.com/user-attachments/assets/a897c8b8-8a85-451b-bfa0-eafc033cd769)
@@ -33,7 +45,7 @@ Essa interface Product se encontra em Product.JAVA
 
 <h6 align = "center">Figura 2:Product Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
-#### 3.2.1 Interface visitor
+#### 3.2.3 Interface visitor
 Essa interface visitor se encontra no Visitor.JAVA
 
 
@@ -42,7 +54,7 @@ Essa interface visitor se encontra no Visitor.JAVA
 <h6 align = "center">Figura 3:Visitor Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 
-#### 3.2.1 Concret   visitor 1
+#### 3.2.4 Concret   visitor 1
 Concreter visitor Food (comida) que se encontra em Food.java
 
 ![image](https://github.com/user-attachments/assets/22ca9939-2d33-4d8b-93ee-f554db156d95)
@@ -51,7 +63,7 @@ Concreter visitor Food (comida) que se encontra em Food.java
 
 <h6 align = "center">Figura 4:Food Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
-#### 3.2.1 Concret  visitor 2
+#### 3.2.5 Concret  visitor 2
 Concrete visitor Eletronics (Eletronics) que se encontra em Eletronics.java
 
 ![image](https://github.com/user-attachments/assets/d6ea0f82-2bf5-428a-b5f6-815d356d697f)
@@ -61,7 +73,7 @@ Concrete visitor Eletronics (Eletronics) que se encontra em Eletronics.java
 
 <h6 align = "center">Figura 5:Eletronics Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
-#### 3.2.1 Concret  Element 1
+#### 3.2.6 Concret  Element 1
 Concrete element Discount A(Desconto a) que se encontra em DiscountA.java
 
 
@@ -72,7 +84,7 @@ Concrete element Discount A(Desconto a) que se encontra em DiscountA.java
 
 <h6 align = "center">Figura 6:Discount A Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
-#### 3.2.1 Concret  Element 2
+#### 3.2.7 Concret  Element 2
 Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
 
 
@@ -91,7 +103,7 @@ Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
 ## Referências
 
 > **Arquitetura e Desenho de Software - Aula GoFs Comportamentais**. Material de apoio em slides. Milene Serrano.
-
+> **Design Patterns: Padrões “GoF”**. Disponivel em :https://www.devmedia.com.br/design-patterns-padroes-gof/16781. Acesso em:21/07.2024
 ## Versionamento
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
