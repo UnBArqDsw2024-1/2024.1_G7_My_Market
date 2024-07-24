@@ -97,6 +97,7 @@ Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
 ## Resultado
 
 A imagem abaixo ilustra o resultado de um código que aplica descontos específicos aos produtos banana e smartwatch. Para cada produto, são calculados os preços após a aplicação dos descontos, e esses valores são apresentados de forma clara e organizada. 
+
 ![WhatsApp Image 2024-07-24 at 09 05 20](https://github.com/user-attachments/assets/416d95b7-b80f-4d26-ab72-069d9ec3b26f)
 
 
@@ -110,4 +111,5 @@ A imagem abaixo ilustra o resultado de um código que aplica descontos específi
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | Guilherme Nishimura |x | 22/07/2023| x|
 | 1.1   | Mais alterações | Guilherme Nishimura | Pedro Henrique  | 23/07/2023| 23/07/2023|
+| 1.2   | Finalizando a documentação | Pedro Henrique | Guilherme Nishimura  | 24/07/2023| 24/07/2023|
 
