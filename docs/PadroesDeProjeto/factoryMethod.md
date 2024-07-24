@@ -8,7 +8,7 @@ Para implementar o padrão Factory Method, primeiramente defina uma classe base 
 
 ## 2. Objetivo
 
-
+O objetivo do padrão de design criacional Factory Method é fornecer uma interface para criar objetos em uma superclasse, permitindo que as subclasses decidam qual classe instanciar. No contexto de uma hierarquia de produtos, como Product, Food e Electronics, o Factory Method permite que a criação de instâncias específicas desses produtos seja delegada a fábricas concretas. Isso promove a flexibilidade e a extensibilidade do sistema, pois novas subclasses de Product podem ser adicionadas sem modificar o código existente. Cada fábrica concreta (FoodFactory e ElectronicsFactory) implementa o método de criação definido na superclasse de fábrica (ProductFactory), garantindo que cada tipo de produto seja instanciado de maneira consistente e encapsulada. Dessa forma, o código cliente pode criar objetos de diferentes tipos de produtos sem precisar conhecer as classes exatas, facilitando a manutenção e a expansão do sistema.
 
 ## 3. Implementação
 ### 3.1. Diagrama UML
@@ -71,6 +71,9 @@ Essa parte do código se encontra em Main.java
 <h6 align = "center">Figura 8: Main. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 ## Resultado
+A imagem abaixo ilustra o resultado do código que aplica o padrão de projeto Factory Method, criando 2 produtos banana com preço 10,00 reais, e Smartwatch com preço 299,99 reais.
+
+![image](https://github.com/user-attachments/assets/f6b82f51-65b8-4f9a-aaba-39a792de02ab)
 
 <h6 align = "center">Figura 9: Resultados Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
@@ -86,5 +89,6 @@ Essa parte do código se encontra em Main.java
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | Pedro Henrique |x | 24/07/2023| x|
 | 1.1   | Mais alterações | Pedro Henrique | Guilherme Nishimura  | 24/07/2023| 24/07/2023|
+| 1.2   | Mais informações e resultado | Guilherme Nishimura |  Pedro Henrique | 24/07/2023| 24/07/2023|
 
 
