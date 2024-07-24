@@ -26,53 +26,53 @@ Essa classe se encontra em Main.java
 
 ![classe-product](https://github.com/user-attachments/assets/a192c3eb-5006-4c03-806d-aad0fe9739f4)
 
-<h6 align = "center">Figura 2:Classe base Product. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 2: Classe base Product. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.2 Subclasse Food
 Essa classe se encontra em Main.java
 
 ![subclasse-food](https://github.com/user-attachments/assets/0d8597a4-221c-4c53-9b6f-54bbdea2aab8)
 
-<h6 align = "center">Figura 3:Subclasse Food. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 3: Subclasse Food. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.3 Subclasse Eletronics
 Essa classe se encontra em Main.java
 
 ![subclasse-eletronics](https://github.com/user-attachments/assets/76208872-80fc-4865-8170-ccadb81e7fa9)
 
-<h6 align = "center">Figura 4:Subclasse Eletronics. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 4: Subclasse Eletronics. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.4 ProductFactory
 Essa classe se encontra em Main.java
 
 ![productFactory](https://github.com/user-attachments/assets/860008e8-d3c2-453e-afba-5611b913dd37)
 
-<h6 align = "center">Figura 5:ProductFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 5: ProductFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.5 Subclasse FoodFactory
 Essa classe se encontra em Main.java
 
 ![foodFactory](https://github.com/user-attachments/assets/bdbc3a76-158d-4b7f-8c2e-e7012c202682)
 
-<h6 align = "center">Figura 6:Subclasse FoodFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 6: Subclasse FoodFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.6 Subclasse EletronicsFactory
 Essa classe se encontra em Main.java
 
 ![eletronicsFactory](https://github.com/user-attachments/assets/1b53b05f-8f6c-4be4-a950-74ebec93759b)
 
-<h6 align = "center">Figura 7:Subclasse EletronicsFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 7: Subclasse EletronicsFactory. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 #### 3.2.7 Main
 Essa parte do código se encontra em Main.java
 
 ![main](https://github.com/user-attachments/assets/ad80ee3a-05f5-49c2-80b5-b07cd33f1c71)
 
-<h6 align = "center">Figura 8:Main. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 8: Main. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 ## Resultado
 
-<h6 align = "center">Figura 9:Resultados Fonte: Guilherme Nishimura e Pedro Henrique</h6>
+<h6 align = "center">Figura 9: Resultados Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 
 ## Referências
