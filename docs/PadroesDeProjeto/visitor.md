@@ -16,7 +16,8 @@ O objeto Visitor visita cada elemento e executa a operação apropriada.
 
 ## 2. Objetivo
 
-...
+Para demonstrar o uso do padrão de design comportamental Visitor (Visitante), que permite adicionar novas operações a objetos sem alterar suas classes vamos  aplicar diferentes descontos a produtos de tipos variados (alimentos e eletrônicos) usando visitantes concretos (implementações de descontos).
+
 ## 3. Implementação
 ### 3.1. Diagrama UML
 Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
@@ -95,9 +96,8 @@ Concrete element Discount B(Desconto B) que se encontra em DiscountB.java
 
 ## Resultado
 
-
-
-
+A imagem abaixo ilustra o resultado de um código que aplica descontos específicos aos produtos banana e smartwatch. Para cada produto, são calculados os preços após a aplicação dos descontos, e esses valores são apresentados de forma clara e organizada. 
+![WhatsApp Image 2024-07-24 at 09 05 20](https://github.com/user-attachments/assets/416d95b7-b80f-4d26-ab72-069d9ec3b26f)
 
 
 ## Referências
