@@ -139,5 +139,5 @@ Este diagrama ilustra como o padrão Command separa a solicitação de uma açã
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [Guilherme Soares](https://github.com/GuilhermeSoaress) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) | 22/07/2024 | 22/07/2024 |
-| 1.1 | Adição do Código | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | - |
-| 1.2 | Adição do Diagrama UML | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | - |
+| 1.1 | Adição do Código | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
+| 1.2 | Adição do Diagrama UML | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |

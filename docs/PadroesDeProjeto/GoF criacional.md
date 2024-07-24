@@ -18,7 +18,6 @@ Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
 Colocar imagem
 -->
 
-<h6 align = "center">Figura 01</h6>
 
 ### 3.2. Código
 
@@ -110,3 +109,5 @@ Colocar imagem
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0 | Criação do documento | [Guilherme Soares](https://github.com/GuilhermeSoaress) / [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adição do Código | [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
+| 1.2 | Adição do Diagrama UML | [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
