@@ -27,7 +27,7 @@ Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com
 <h6 align = "center">Figura 1: Desconto. Fonte: Guilherme Nishimura e Pedro Henrique</h6>
 
 ### 3.2. Código
-O código foi desenvolvido em  Java , Com a colaboração de [Pedro Henrique ](https://github.com/pehenobra2) e [Guilherme Nishimura](https://github.com/Guilherme-nishi).Para ter o codigo desenvolvido acesse [ aqui](https://github.com/UnBArqDsw2024-1/2024.1_G7_My_Market/tree/Guilherme_Pedro/Entrega03/docs/PadroesDeProjeto/src/Visitor).
+O código foi desenvolvido em  Java , Com a colaboração de [Pedro Henrique ](https://github.com/pehenobra2) e [Guilherme Nishimura](https://github.com/Guilherme-nishi).Para ter o codigo desenvolvido acesse [aqui](https://github.com/UnBArqDsw2024-1/2024.1_G7_My_Market/tree/main/docs/PadroesDeProjeto/src/Visitor).
 
 #### 3.2.1 Interface client
 Essa interface Client se encontra no Main.JAVA
