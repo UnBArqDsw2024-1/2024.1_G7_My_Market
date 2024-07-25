@@ -2,7 +2,13 @@
 
 ## 1. Introdução
 
+O padrão de projeto comportamental Observer se baseia em uma cadeia de dependência de objetos, onde se um dos objetos muda de estado, todos os outros são notificados. Remetendo a ideia de que os outros objetos estão observando o estado desse outro objeto, para agir de acordo.
+
+> Definir uma dependência um-para-muitos entre objetos, de maneira que quando um objeto muda de estado todos os seus dependentes são notificados e atualizados automaticamente (Livro: Padrão de projetos, pg. 269)
+
 ## 2. Objetivo
+
+Demonstrar o uso do Observer, criando um tipo de classe Observer que tem um método que atualiza com base na mudança de estado de outra classe.
 
 ## 3. Implementação
 ### 3.1 Diagrama UML
@@ -22,7 +28,7 @@
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
-| X | X | X | X | X | X | 
+| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
 
 
 
