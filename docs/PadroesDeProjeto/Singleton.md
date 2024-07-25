@@ -1,10 +1,12 @@
-# Singleton - GoF estrutural
+# Singleton - GoF Criacional
 
 ## 1. Introdução
 
+O padrão Singleton é um padrão de projeto criacional simples, cujo principal objetivo é garantir que uma classe tenha apenas uma instância e forneça um ponto global de acesso a essa instância (Livro: Padrões de Projeto, pg. 125). Essa abordagem é especialmente útil em cenários onde é crucial ter um único ponto de controle, como no gerenciamento de configurações de aplicativos, conexões a bancos de dados ou caches.
 
 ## 2. Objetivo
 
+Demonstrar o uso do Singleton em um projeto, criando uma classe gerenciadora com pontos de acesso globais para o client.
 
 ## 3. Implementação
 ### 3.1 Diagrama UML
