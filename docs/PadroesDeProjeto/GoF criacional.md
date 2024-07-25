@@ -1,0 +1,111 @@
+# Prototype - GoF Criacional
+
+## 1. Introdução
+
+O padrão Prototype é um dos padrões criacionais do GoF que facilita a criação de novos objetos através da cópia de instâncias existentes, conhecidas como protótipos. Este padrão é especialmente útil em situações onde a criação direta de um novo objeto é complexa ou custosa em termos de tempo e recursos. Ao invés de instanciar um objeto do zero, o Prototype permite que você clone um objeto existente, garantindo que a nova instância seja uma cópia exata do protótipo. Isso pode melhorar significativamente o desempenho e a eficiência do sistema, além de proporcionar maior flexibilidade na criação de novos objetos.
+
+## 2. Objetivo
+
+O objetivo do padrão Prototype é facilitar a criação de novos objetos através da clonagem de instâncias existentes, reduzindo a complexidade e o custo associados à criação de objetos do zero. Este padrão é particularmente útil em sistemas onde a criação de novos objetos é complexa ou onerosa, permitindo a reutilização de objetos pré-configurados como protótipos para gerar novas instâncias de forma eficiente.
+
+## 3. Implementação
+
+
+### 3.1. Diagrama UML
+Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
+
+<div align = "center"><img src="" alt="Diagrama UML">
+<p>Figura 1 - Diagrama UML<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
+
+### 3.2. Código
+
+    import java.util.HashMap;
+    import java.util.Map;
+
+    // Prototype Interface
+    interface Prototype<T> {
+        T clone();
+    }
+
+    // Product class implementing Prototype
+    class Product implements Prototype<Product> {
+        private String name;
+        private double price;
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public Product clone() {
+        return new Product(this.name, this.price);
+    }
+
+    @Override
+    public String toString() {
+        return "Product{name='" + name + "', price=" + price + "}";
+     }
+    }
+
+    // ProductRegistry to manage prototypes
+    class ProductRegistry {
+    private Map<String, Product> prototypes = new HashMap<>();
+
+    public void addPrototype(String key, Product prototype) {
+        prototypes.put(key, prototype);
+    }
+
+    public Product createProduct(String key) {
+        Product prototype = prototypes.get(key);
+        if (prototype != null) {
+            return prototype.clone();
+        } else {
+            throw new IllegalArgumentException("Prototype not found for key: " + key);
+        }
+      }
+    }
+
+    // Uso do padrão Prototype
+    public class Main {
+        public static void main(String[] args) {
+            ProductRegistry registry = new ProductRegistry();
+
+        // Adicionando protótipos ao registro
+        Product bread = new Product("Bread", 2.50);
+        Product milk = new Product("Milk", 3.00);
+        registry.addPrototype("Bread", bread);
+        registry.addPrototype("Milk", milk);
+
+        // Criando novos produtos a partir dos protótipos
+        Product breadClone1 = registry.createProduct("Bread");
+        Product breadClone2 = registry.createProduct("Bread");
+        Product milkClone1 = registry.createProduct("Milk");
+
+        System.out.println(breadClone1);
+        System.out.println(breadClone2);
+        System.out.println(milkClone1);
+     }
+    }
+
+## Referências
+
+> **Arquitetura e Desenho de Software - Aula GoFs Criacionais**. Material de apoio em slides. Milene Serrano.
+
+> **Padrões de Projetos - Criacionais - Prototype . Disponível em: <https://refactoring.guru/pt-br/design-patterns/prototype>. Acesso em: 24 de julho de 2024.**
+
+## Versionamento
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
+| :------: | :---: | :-----: | :----: | :----: | :-----: |
+| 1.0 | Criação do documento | [Guilherme Soares](https://github.com/GuilhermeSoaress) / [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adição do Código | [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
+| 1.2 | Adição do Diagrama UML | [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |

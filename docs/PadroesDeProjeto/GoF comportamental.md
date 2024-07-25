@@ -1,0 +1,143 @@
+# Command - GoF Comportamental
+
+## 1. Introdução
+
+O padrão Command encapsula uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, filas ou logs de solicitações, e suporte operações que podem ser desfeitas.
+
+## 2. Objetivo
+
+O objetivo do padrão Command é desacoplar o objeto que invoca a operação daquele que conhece como executá-la. Isso permite maior flexibilidade no design, facilitando a implementação de operações como desfazer (undo), refazer (redo) e registro de comandos.
+
+## 3. Implementação
+
+
+### 3.1. Diagrama UML
+Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
+
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/GuilhermeS_Miguel_GuilhermeB/Entrega03/docs/Imagens/Diagramas/DiagramaCommand.png" alt="Diagrama UML">
+<p>Figura 1 - Diagrama UML<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
+
+
+#### Descrição das classes e interfaces:
+
+Command (Interface)
+
+Método: execute(): Define a interface comum para todos os comandos. Cada comando concreto deve implementar este método.
+
+
+AddItemCommand (Classe Concreta)
+
+- Atributos:
+- cart: Cart: Referência ao carrinho de compras onde o item será adicionado.
+- item: String: O item a ser adicionado.
+- Método: execute(): Implementa a lógica para adicionar um item ao carrinho.
+
+RemoveItemCommand (Classe Concreta)
+
+- Atributos:
+- cart: Cart: Referência ao carrinho de compras de onde o item será removido.
+- item: str: O item a ser removido.
+- Método: execute(): Implementa a lógica para remover um item do carrinho.
+
+Cart (Classe)
+
+- Atributos:
+- items: list: Lista de itens no carrinho.
+- Métodos:addItem(item: String): Adiciona um item ao carrinho. removeItem(item: String): Remove um item do carrinho. 
+
+OrderProcessor (Classe)
+
+- Métodos: execute(c: Command): Recebe um comando e executa seu método execute().
+
+#### Funcionamento do Padrão Command
+
+- O OrderProcessor atua como o invocador, que sabe como executar um comando, mas não sabe os detalhes do que o comando faz.
+- AddItemCommand e RemoveItemCommand são os comandos concretos que encapsulam a lógica de adição e remoção de itens no carrinho.
+- A interface Command define uma interface comum para todos os comandos.
+- A classe Cart representa o receptor, o objeto que realiza a ação real (adicionar ou remover itens).
+
+Este diagrama ilustra como o padrão Command separa a solicitação de uma ação do objeto que executa a ação, permitindo uma maior flexibilidade e reutilização de código.
+
+### 3.2. Código
+
+    // Command Interface
+    interface Command {
+        void execute();
+    }
+
+    // Receiver
+    class Cart {
+        public void addItem(String item) {
+            System.out.println("Added " + item + " to cart");
+        }
+
+    public void removeItem(String item) {
+        System.out.println("Removed " + item + " from cart");
+     }
+    }
+
+    // Concrete Commands
+    class AddItemCommand implements Command {
+        private Cart cart;
+        private String item;
+
+        public AddItemCommand(Cart cart, String item) {
+            this.cart = cart;
+            this.item = item;
+        }
+
+        @Override
+        public void execute() {
+            cart.addItem(item);
+        }
+    }
+
+    class RemoveItemCommand implements Command {
+        private Cart cart;
+        private String item;
+
+        public RemoveItemCommand(Cart cart, String item) {
+            this.cart = cart;
+            this.item = item;
+        }
+
+        @Override
+        public void execute() {
+            cart.removeItem(item);
+        }
+    }
+
+    // Invoker
+    class OrderProcessor {
+        public void execute(Command command) {
+            command.execute();
+        }
+    }
+
+    // Uso do padrão
+    public class Main {
+        public static void main(String[] args) {
+            Cart cart = new Cart();
+            OrderProcessor orderProcessor = new OrderProcessor();
+
+            Command addItemCommand = new AddItemCommand(cart, "Product 1");
+            Command removeItemCommand = new RemoveItemCommand(cart, "Product 1");
+
+            orderProcessor.execute(addItemCommand);
+            orderProcessor.execute(removeItemCommand);
+        }
+    }
+
+## Referências
+
+> **Arquitetura e Desenho de Software - Aula GoFs Comportamentais**. Material de apoio em slides. Milene Serrano.
+
+> **Padrões de Projetos - Comportamentais - Command . Disponível em: <https://refactoring.guru/pt-br/design-patterns/command>. Acesso em: 23 de julho de 2024.**
+
+## Versionamento
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
+| :------: | :---: | :-----: | :----: | :----: | :-----: |
+| 1.0 | Criação do documento | [Guilherme Soares](https://github.com/GuilhermeSoaress) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Basílio](https://github.com/GuilhermeBES) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adição do Código | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
+| 1.2 | Adição do Diagrama UML | [Guilherme Basílio](https://github.com/GuilhermeBES) e [Miguel de Frias](https://github.com/migueldefrias) | [Guilherme Soares](https://github.com/GuilhermeSoaress)| 23/07/2024 | 24/07/2024 |
