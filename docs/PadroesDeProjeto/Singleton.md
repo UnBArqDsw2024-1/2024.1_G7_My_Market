@@ -11,6 +11,11 @@ Demonstrar o uso do Singleton em um projeto, criando uma classe gerenciadora com
 ## 3. Implementação
 ### 3.1 Diagrama UML
 
+Um configManager que comanda todas as operações e gera outros configManagers.
+
+![diagramaSingleton](./src/Singleton/Singleton.png)
+<h6 align = "center">Figura 1: Diagrama de classes Singleton</h6>
+
 ### 3.2 Código
 
 ## Resultado
@@ -27,6 +32,7 @@ Demonstrar o uso do Singleton em um projeto, criando uma classe gerenciadora com
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
 | 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
+| 1.2 | Texto e diagrama de classes | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |  
 
 
 

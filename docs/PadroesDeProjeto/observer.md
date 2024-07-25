@@ -13,6 +13,11 @@ Demonstrar o uso do Observer, criando um tipo de classe Observer que tem um mét
 ## 3. Implementação
 ### 3.1 Diagrama UML
 
+Classe Loja, possui uma lista de objetos da classe Clientes que são observadores, quando há um desconto ou um novo produto a ser aplicado, os objetos da classe Cliente ativam o método Atualizar().
+
+![diagramaObserver](./src/Observer/Observer.png)
+<h6 align = "center">Figura 1: Diagrama de classes Observer</h6>
+
 ### 3.2 Código
 
 ## Resultado
@@ -28,7 +33,8 @@ Demonstrar o uso do Observer, criando um tipo de classe Observer que tem um mét
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
-| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
+| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
+| 1.2 | Texto e diagrama de classes | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |   
 
 
 

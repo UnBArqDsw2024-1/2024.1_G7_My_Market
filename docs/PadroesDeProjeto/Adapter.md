@@ -13,6 +13,11 @@ Demonstrar o uso do Adapter em um projeto gerando uma classe Adapter que herda m
 ## 3. Implementação
 ### 3.1 Diagrama UML
 
+Classe Camisa e Casaco (Adapters) herdam da classe mãe Roupa o método aplicar_tamanho() e o sobrescrevem (override) fazendo um print e chamando a classe Tamanho (Adaptee). Essa classe possui um método aplicar_tamanho() mais específico, que aplica o tamanho grande ou pequeno.
+
+![diagramaAdapter](./src/Adapter/Adapter.png)
+<h6 align = "center">Figura 1: Diagrama de classes Adapter</h6>
+
 ### 3.2 Código
 
 ## Resultado
@@ -28,7 +33,8 @@ Demonstrar o uso do Adapter em um projeto gerando uma classe Adapter que herda m
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
-| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
+| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
+| 1.2 | Texto e diagrama de classes | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |  
 
 
 
