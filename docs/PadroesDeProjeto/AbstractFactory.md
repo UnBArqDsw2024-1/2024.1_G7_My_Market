@@ -13,6 +13,10 @@ Demonstrar o uso do padrão de projeto Abstract Factory, criando objetos de clas
 
 ## 3. Implementação
 ### 3.1 Diagrama UML
+Cliente se comunica com a classe geradora RoupaFactory que gera outras classes filhas RoupaFactoryFormal e RoupaFactoryCasual. Essas classes filhas são responsáveis por criar as classes concretas camiseta e casaco do tipo casual e formal.
+
+![diagrama-decorator](./src/AbstractFactory/AbstractFactory.png)
+<h6 align = "center">Figura 1: Diagrama de classes Abstract Factory</h6>
 
 ### 3.2 Código
 
@@ -30,6 +34,7 @@ Demonstrar o uso do padrão de projeto Abstract Factory, criando objetos de clas
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
 | 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
+| 1.2 | Texto e diagrama de classes | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 | 
 
 
 
