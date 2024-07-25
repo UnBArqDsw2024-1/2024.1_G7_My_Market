@@ -18,6 +18,7 @@ Classe Camisa e Casaco (Adapters) herdam da classe mãe Roupa o método aplicar_
 ![diagramaAdapter](./src/Adapter/Adapter.png)
 <h6 align = "center">Figura 1: Diagrama de classes Adapter</h6>
 
+### 3.2 Código
 Aqui está um exemplo simples de implementação do padrão Adapter em Python no contexto do diagrama UML:
 
 Primeiro é definido uma interface para a implementação (Tamanho) e duas classes concretas que a implementam (TamanhoPequeno e TamanhoGrande):
