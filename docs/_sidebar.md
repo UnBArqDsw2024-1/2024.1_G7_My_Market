@@ -34,7 +34,7 @@
       - [3.2.2 Facade](/PadroesDeProjeto/3.2.2.Facade.md)
       - [3.2.3 Adapter](/PadroesDeProjeto/3.2.3.Adapter.md)
     - [3.3. Módulo Padrões de Projetos GoFs Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
-      - [3.3.1 Chais Of Responsibility](/PadroesDeProjeto/3.3.1.ChainsOfResponsability.md)
+      - [3.3.1 Chains Of Responsibility](/PadroesDeProjeto/3.3.1.ChainsOfResponsibility.md)
       - [3.3.2 Composite](/PadroesDeProjeto/3.3.2.Composite.md)
       - [3.3.3 Command](/PadroesDeProjeto/3.3.3.Command.md)
       - [3.3.4 Strategy](/PadroesDeProjeto/3.3.4.Strategy.md)
