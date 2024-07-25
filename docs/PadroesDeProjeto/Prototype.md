@@ -1,0 +1,95 @@
+# Prototype - GoF Criacional
+
+## 1. Introdução
+
+O Prototype é um padrão de projeto criacional que permite copiar objetos existentes sem fazer seu código ficar dependente de suas classes.
+
+## 2. Objetivo
+
+O padrão Prototype delega o processo de clonagem para o próprio objeto que está sendo clonado. O padrão declara um interface comum para todos os objetos que suportam clonagem. Essa interface permite que você clone um objeto sem acoplar seu código à classe daquele objeto. Geralmente, tal interface contém apenas um único método clonar.
+
+## 3. Implementação
+
+
+
+### 3.1. Diagrama UML
+Modelagem utilizando a ferramenta online [Lucidchart](https://www.lucidchart.com/pages/).
+
+![image](https://github.com/user-attachments/assets/953c1118-bf4e-48f6-9160-52f05701f21b)
+
+
+<h6 align = "center">Figura 01 Fonte: Artur Rodrigues Sousa Alves e João Víctor Costa Andrade</h6>
+
+### 3.2. Código
+
+```java
+public interface Prototype {
+    String getColor();
+    Prototype clone();
+}
+
+public class Button implements Prototype {
+    private int x;
+    private int y;
+    private String color;
+
+    public Button(int x, int y, String color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    }
+
+    public Button(Button prototype) {
+        if (prototype != null) {
+            this.x = prototype.x;
+            this.y = prototype.y;
+            this.color = prototype.color;
+        }
+    }
+
+    @Override
+    public String getColor() {
+        return this.color;
+    }
+
+    @Override
+    public Prototype clone() {
+        return new Button(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Button [x=" + x + ", y=" + y + ", color=" + color + "]";
+    }
+}
+
+public class Client {
+    public static void main(String[] args) {
+        PrototypeRegistry registry = new PrototypeRegistry();
+
+        // Adicionando protótipo ao registro
+        Button landingButton = new Button(10, 40, "red");
+        registry.addItem("LandingButton", landingButton);
+
+        // Clonando protótipo pelo ID
+        Button buttonById = (Button) registry.getById("LandingButton");
+        System.out.println(buttonById);
+
+        // Clonando protótipo pela cor
+        Button buttonByColor = (Button) registry.getByColor("red");
+        System.out.println(buttonByColor);
+    }
+}
+```
+
+
+## Referências
+
+> **Arquitetura e Desenho de Software - Aula GoFs Comportamentais**. Material de apoio em slides. Milene Serrano.
+## Versionamento
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
+| :------: | :---: | :-----: | :----: | :----: | :-----: |
+| 1.0 | Criação do documento | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
+| 1.1 | Adicionando código | [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
+| 1.2 | Finalizando documento| [Artur Rodrigues](https://github.com/ArturRSA19)| [João Costa](https://github.com/jvcostta) | 22/07/2024 | 22/07/2024 |
