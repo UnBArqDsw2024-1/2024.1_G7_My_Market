@@ -60,7 +60,7 @@ Este diagrama ilustra como o padrão Command separa a solicitação de uma açã
 
 ### 3.2. Código
 
-// Command Interface
+    // Command Interface
     interface Command {
         void execute();
     }
@@ -73,7 +73,7 @@ Este diagrama ilustra como o padrão Command separa a solicitação de uma açã
 
     public void removeItem(String item) {
         System.out.println("Removed " + item + " from cart");
-    }
+     }
     }
 
     // Concrete Commands

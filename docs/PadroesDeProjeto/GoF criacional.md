@@ -19,18 +19,18 @@ Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
 
 ### 3.2. Código
 
-import java.util.HashMap;
-import java.util.Map;
+    import java.util.HashMap;
+    import java.util.Map;
 
-// Prototype Interface
-interface Prototype<T> {
-    T clone();
-}
+    // Prototype Interface
+    interface Prototype<T> {
+        T clone();
+    }
 
-// Product class implementing Prototype
-class Product implements Prototype<Product> {
-    private String name;
-    private double price;
+    // Product class implementing Prototype
+    class Product implements Prototype<Product> {
+        private String name;
+        private double price;
 
     public Product(String name, double price) {
         this.name = name;
@@ -53,11 +53,11 @@ class Product implements Prototype<Product> {
     @Override
     public String toString() {
         return "Product{name='" + name + "', price=" + price + "}";
+     }
     }
-}
 
-// ProductRegistry to manage prototypes
-class ProductRegistry {
+    // ProductRegistry to manage prototypes
+    class ProductRegistry {
     private Map<String, Product> prototypes = new HashMap<>();
 
     public void addPrototype(String key, Product prototype) {
@@ -71,13 +71,13 @@ class ProductRegistry {
         } else {
             throw new IllegalArgumentException("Prototype not found for key: " + key);
         }
+      }
     }
-}
 
-// Uso do padrão Prototype
-public class Main {
-    public static void main(String[] args) {
-        ProductRegistry registry = new ProductRegistry();
+    // Uso do padrão Prototype
+    public class Main {
+        public static void main(String[] args) {
+            ProductRegistry registry = new ProductRegistry();
 
         // Adicionando protótipos ao registro
         Product bread = new Product("Bread", 2.50);
@@ -93,8 +93,8 @@ public class Main {
         System.out.println(breadClone1);
         System.out.println(breadClone2);
         System.out.println(milkClone1);
+     }
     }
-}
 
 ## Referências
 
