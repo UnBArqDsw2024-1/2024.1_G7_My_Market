@@ -132,7 +132,7 @@ public class TransportadorService {
 
 ## Versionamento
 
-| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
-| :------: | :---: | :-----: | :----: | :----: | :-----: |
-| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 23/07/2024 | x |
-| 2.0    | Adição do código e Diagrama | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 23/07/2024 | x |
+| Versão | Alteração |  Responsável  | Revisor | Data de realização |
+| :------: | :---: | :-----: | :----: | :----: |
+| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Pedro Lucas](https://github.com/AlefMemTav) | 23/07/2024 |
+| 2.0    | Adição do código e Diagrama | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Pedro Lucas](https://github.com/AlefMemTav) | 23/07/2024 |

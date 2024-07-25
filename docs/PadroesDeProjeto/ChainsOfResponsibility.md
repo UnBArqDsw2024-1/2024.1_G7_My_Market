@@ -128,9 +128,9 @@ public class Request {
 
 ## Versionamento
 
-| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
-| :------: | :---: | :-----: | :----: | :----: | :-----: |
-| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
-| 2.0    | Adição o código da implementação do GoF.  | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
-| 3.0    | Adição do Diagrama.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
-| 3.1    | Pequenos Ajustes nos textos do diagrama e no do código.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 22/07/2024 | x |
+| Versão | Alteração |  Responsável  | Revisor | Data de realização |
+| :------: | :---: | :-----: | :----: | :----: |
+| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Thiago Vivan](https://github.com/thiago-vivan) | 22/07/2024 |
+| 2.0    | Adição o código da implementação do GoF.  | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Thiago Vivan](https://github.com/thiago-vivan) | 22/07/2024 |
+| 3.0    | Adição do Diagrama.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) |[Thiago Vivan](https://github.com/thiago-vivan) | 22/07/2024 |
+| 3.1    | Pequenos Ajustes nos textos do diagrama e no do código.   | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Thiago Vivan](https://github.com/thiago-vivan) | 22/07/2024 |

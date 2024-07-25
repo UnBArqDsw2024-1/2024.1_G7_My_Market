@@ -251,6 +251,8 @@ Observe: Atualmente há algumas ferramentas, por exemplo, o Lombok para a lingua
 
 ## Versionamento
 
-| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
-| :------: | :---: | :-----: | :----: | :----: | :-----: |
-| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | - | 23/07/2024 | x |
+| Versão | Alteração |  Responsável  | Revisor | Data de realização |
+| :------: | :---: | :-----: | :----: | :----: |
+| 1.0    | Inicio da estrutura do documento. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Mateus Orlando](https://github.com/MateusPy) | 23/07/2024 |
+| 2.0    | Adição do Diagrama. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Mateus Orlando](https://github.com/MateusPy) | 24/07/2024 |
+| 3.0    | Adiçãod o código. | [Mateus Orlando](https://github.com/MateusPy), [Pedro Lucas](https://github.com/AlefMemTav) e [Thiago Vivan](https://github.com/thiago-vivan) | [Mateus Orlando](https://github.com/MateusPy) | 24/07/2024 |
