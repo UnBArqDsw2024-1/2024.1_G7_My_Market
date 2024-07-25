@@ -1,12 +1,12 @@
-# Object Pool - GoF Criacional
+# Prototype - GoF Criacional
 
 ## 1. Introdução
 
-O padrão Object Pool gerencia a reutilização de objetos caros de criar e destruir. Ele mantém um pool de objetos prontos para serem reutilizados, o que pode melhorar significativamente o desempenho em situações onde a criação de objetos é custosa em termos de tempo ou recursos.
+O padrão Prototype é um dos padrões criacionais do GoF que facilita a criação de novos objetos através da cópia de instâncias existentes, conhecidas como protótipos. Este padrão é especialmente útil em situações onde a criação direta de um novo objeto é complexa ou custosa em termos de tempo e recursos. Ao invés de instanciar um objeto do zero, o Prototype permite que você clone um objeto existente, garantindo que a nova instância seja uma cópia exata do protótipo. Isso pode melhorar significativamente o desempenho e a eficiência do sistema, além de proporcionar maior flexibilidade na criação de novos objetos.
 
 ## 2. Objetivo
 
-O objetivo do padrão Object Pool é evitar o custo de criação e destruição repetida de objetos ao fornecer um pool de objetos reutilizáveis. Este padrão é particularmente útil em sistemas que requerem a criação frequente de objetos que são caros para inicializar, como conexões de banco de dados ou recursos de rede.
+O objetivo do padrão Prototype é facilitar a criação de novos objetos através da clonagem de instâncias existentes, reduzindo a complexidade e o custo associados à criação de objetos do zero. Este padrão é particularmente útil em sistemas onde a criação de novos objetos é complexa ou onerosa, permitindo a reutilização de objetos pré-configurados como protótipos para gerar novas instâncias de forma eficiente.
 
 ## 3. Implementação
 
@@ -14,96 +14,94 @@ O objetivo do padrão Object Pool é evitar o custo de criação e destruição 
 ### 3.1. Diagrama UML
 Modelagem utilizando a ferramenta online [Miro](https://miro.com/app/board/).
 
-<!--- 
-Colocar imagem
--->
-
+<div align = "center"><img src="" alt="Diagrama UML">
+<p>Figura 1 - Diagrama UML<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ### 3.2. Código
 
-    import java.util.LinkedList;
-    import java.util.Queue;
+import java.util.HashMap;
+import java.util.Map;
 
-    // Object Pool Interface
-    interface Pool<T> {
-        T acquire();
-        void release(T obj);
+// Prototype Interface
+interface Prototype<T> {
+    T clone();
+}
+
+// Product class implementing Prototype
+class Product implements Prototype<Product> {
+    private String name;
+    private double price;
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
 
-    // Reusable Object
-    class Connection {
-        private static int counter = 1;
-        private int id;
-
-        public Connection() {
-            this.id = counter++;
-        }
-
-        public void connect() {
-            System.out.println("Connection " + id + " established.");
-        }
-
-        public void disconnect() {
-            System.out.println("Connection " + id + " terminated.");
-        }
-
-        public int getId() {
-            return id;
-        }
+    public String getName() {
+        return name;
     }
 
-    // Object Pool
-    class ConnectionPool implements Pool<Connection> {
-        private final Queue<Connection> availableConnections = new LinkedList<>();
-        private final int MAX_POOL_SIZE = 5;
-
-        public ConnectionPool() {
-            initializePool();
-        }
-
-        private void initializePool() {
-            for (int i = 0; i < MAX_POOL_SIZE; i++) {
-                availableConnections.add(new Connection());
-            }
-        }
-
-        @Override
-        public Connection acquire() {
-            if (availableConnections.isEmpty()) {
-                System.out.println("No available connections. Please wait...");
-                return null;
-            }
-            Connection conn = availableConnections.poll();
-            conn.connect();
-            return conn;
-        }
-
-        @Override
-        public void release(Connection conn) {
-            conn.disconnect();
-            availableConnections.offer(conn);
-        }
+    public double getPrice() {
+        return price;
     }
 
-    // Uso do padrão
-    public class Main {
-        public static void main(String[] args) {
-            ConnectionPool pool = new ConnectionPool();
-
-            Connection conn1 = pool.acquire();
-            Connection conn2 = pool.acquire();
-
-            pool.release(conn1);
-            pool.release(conn2);
-
-            Connection conn3 = pool.acquire();
-        }
+    @Override
+    public Product clone() {
+        return new Product(this.name, this.price);
     }
 
+    @Override
+    public String toString() {
+        return "Product{name='" + name + "', price=" + price + "}";
+    }
+}
+
+// ProductRegistry to manage prototypes
+class ProductRegistry {
+    private Map<String, Product> prototypes = new HashMap<>();
+
+    public void addPrototype(String key, Product prototype) {
+        prototypes.put(key, prototype);
+    }
+
+    public Product createProduct(String key) {
+        Product prototype = prototypes.get(key);
+        if (prototype != null) {
+            return prototype.clone();
+        } else {
+            throw new IllegalArgumentException("Prototype not found for key: " + key);
+        }
+    }
+}
+
+// Uso do padrão Prototype
+public class Main {
+    public static void main(String[] args) {
+        ProductRegistry registry = new ProductRegistry();
+
+        // Adicionando protótipos ao registro
+        Product bread = new Product("Bread", 2.50);
+        Product milk = new Product("Milk", 3.00);
+        registry.addPrototype("Bread", bread);
+        registry.addPrototype("Milk", milk);
+
+        // Criando novos produtos a partir dos protótipos
+        Product breadClone1 = registry.createProduct("Bread");
+        Product breadClone2 = registry.createProduct("Bread");
+        Product milkClone1 = registry.createProduct("Milk");
+
+        System.out.println(breadClone1);
+        System.out.println(breadClone2);
+        System.out.println(milkClone1);
+    }
+}
 
 ## Referências
 
-> **Arquitetura e Desenho de Software - Aula GoFs Comportamentais**. Material de apoio em slides. Milene Serrano.
+> **Arquitetura e Desenho de Software - Aula GoFs Criacionais**. Material de apoio em slides. Milene Serrano.
+
+> **Padrões de Projetos - Criacionais - Prototype . Disponível em: <https://refactoring.guru/pt-br/design-patterns/prototype>. Acesso em: 24 de julho de 2024.**
+
 ## Versionamento
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |

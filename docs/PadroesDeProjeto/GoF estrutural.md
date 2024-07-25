@@ -43,6 +43,7 @@ PaymentAdapter:
 - O cliente pode usar a interface Payment para fazer pagamentos sem se preocupar com os detalhes de implementação de ThirdPartyPayment.
 
 Este diagrama ilustra como o padrão Adapter permite que uma classe existente (ThirdPartyPayment) seja usada onde uma interface diferente (Payment) é esperada, adaptando as chamadas de método de maneira transparente para o cliente.
+
 ### 3.2. Código
 
     // Adapter
