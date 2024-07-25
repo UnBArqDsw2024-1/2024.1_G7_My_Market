@@ -1,0 +1,170 @@
+# Observer - GoF Comportamental
+
+## 1. Introdução
+
+O padrão de projeto comportamental Observer se baseia em uma cadeia de dependência de objetos, onde se um dos objetos muda de estado, todos os outros são notificados. Remetendo a ideia de que os outros objetos estão observando o estado desse outro objeto, para agir de acordo.
+
+> Definir uma dependência um-para-muitos entre objetos, de maneira que quando um objeto muda de estado todos os seus dependentes são notificados e atualizados automaticamente (Livro: Padrão de projetos, pg. 269)
+
+## 2. Objetivo
+
+Demonstrar o uso do Observer, criando um tipo de classe Observer que tem um método que atualiza com base na mudança de estado de outra classe.
+
+## 3. Implementação
+### 3.1 Diagrama UML
+
+Classe Loja, possui uma lista de objetos da classe Clientes que são observadores, quando há um desconto ou um novo produto a ser aplicado, os objetos da classe Cliente ativam o método Atualizar().
+
+![diagramaObserver](./src/Observer/Observer.png)
+<h6 align = "center">Figura 1: Diagrama de classes Observer</h6>
+
+### 3.2 Código
+
+Aqui está um exemplo simples de implementação do padrão Observer em Python no contexto do diagrama UML:
+
+Primeiro é definido a interface (**Subject**) que define a interface que todos os sujeitos devem seguir, com métodos para registrar, remover e notificar observadores:
+
+```Python
+from abc import ABC, abstractmethod
+
+class Subject(ABC):
+    @abstractmethod
+    def registrar_observador(self, observador):
+        pass
+
+    @abstractmethod
+    def remover_observador(self, observador):
+        pass
+
+    @abstractmethod
+    def notificar_observadores(self):
+        pass
+```
+
+Depois é definida a implementação concreta do sujeito(**Loja**) que serve para manter uma lista de observadores e avisar quando novos produtos são adicionados ou quando há descontos e limpa as notificações depois que está é enviada:
+
+```Python
+class Loja(Subject):
+    def __init__(self):
+        self._observadores = []
+        self._novos_produtos = []
+        self._descontos = {}
+
+    def registrar_observador(self, observador):
+        self._observadores.append(observador)
+
+    def remover_observador(self, observador):
+        self._observadores.remove(observador)
+
+    def notificar_observadores(self):
+        for observador in self._observadores:
+            observador.atualizar(self._novos_produtos, self._descontos)
+        self._novos_produtos = []
+
+    def adicionar_produto(self, produto):
+        self._novos_produtos.append(produto)
+        self.notificar_observadores()
+
+    def adicionar_desconto(self, produto, desconto):
+        self._descontos[produto] = desconto
+        self.notificar_observadores()
+```
+Após isso a interface do observador (**Observer**) que todos os observadores devem seguir, com um método atualizar que é chamado quando o estado do sujeito muda é implemntado como está mostrado abaixo:
+
+```Python
+class Observer(ABC):
+    @abstractmethod
+    def atualizar(self, novos_produtos, descontos):
+        pass
+```
+Agora, é criada a implementação concreta do observador (**Cliente**) que serve para implementar a interface Observer e definir o comportamento quando o estado do sujeito muda, como imprimir notificações, e também atualiza essas para evitar repetições.
+
+```Python
+class Cliente(Observer):
+    def __init__(self, nome, tipo_notificacao):
+        self._nome = nome
+        self._tipo_notificacao = tipo_notificacao
+        self._ultimos_produtos = []
+        self._ultimos_descontos = {}
+
+    def atualizar(self, novos_produtos, descontos):
+        novos_produtos = [produto for produto in novos_produtos if produto not in self._ultimos_produtos]
+        novos_descontos = {produto: desconto for produto, desconto in descontos.items() if produto not in self._ultimos_descontos}
+
+        if novos_produtos or novos_descontos:
+            print(f"Notificação para {self._nome}:")
+            if self._tipo_notificacao == "produtos" and novos_produtos:
+                print("Novos produtos adicionados: ", novos_produtos)
+            elif self._tipo_notificacao == "tudo":
+                if novos_produtos:
+                    print("Novos produtos adicionados: ", novos_produtos)
+                if novos_descontos:
+                    print("Descontos disponíveis: ", novos_descontos)
+            print()
+            self._ultimos_produtos.extend(novos_produtos)
+            self._ultimos_descontos.update(novos_descontos)
+```
+Por fim, é feito a implementação do método main, criando uma instância de Loja e duas instâncias de Cliente. Registrando os clientes como observadores da loja, depois é Adicionado produtos e descontos, e a loja notifica automaticamente os clientes sobre as mudanças.
+:
+
+```Python
+def main():
+    loja = Loja()
+
+    cliente1 = Cliente("João", "produtos")
+    cliente2 = Cliente("Pedro", "tudo")
+
+    loja.registrar_observador(cliente1)
+    loja.registrar_observador(cliente2)
+
+    loja.adicionar_produto("Tênis Adidas Breaknet Masculino - Branco+Preto")
+    loja.adicionar_produto("Tênis Nike Air Max SC Masculino - Preto+Branco")
+    loja.remover_observador(cliente1)
+    loja.adicionar_desconto("Tênis Adidas", "10% de desconto")
+    loja.adicionar_desconto("Tênis Nike", "20% de desconto")
+
+if __name__ == "__main__":
+    main()
+```
+## Resultado
+Após rodar o código acima vai imprimir o seguinte reultado:
+```Python
+Notificação para João:
+Novos produtos adicionados:  ['Tênis Adidas Breaknet Masculino - Branco+Preto']
+
+Notificação para Pedro:
+Novos produtos adicionados:  ['Tênis Adidas Breaknet Masculino - Branco+Preto']
+
+Notificação para João:
+Novos produtos adicionados:  ['Tênis Nike Air Max SC Masculino - Preto+Branco']
+
+Notificação para Pedro:
+Novos produtos adicionados:  ['Tênis Nike Air Max SC Masculino - Preto+Branco']
+
+Notificação para Pedro:
+Descontos disponíveis:  {'Tênis Adidas': '10% de desconto'}
+
+Notificação para Pedro:
+Descontos disponíveis:  {'Tênis Nike': '20% de desconto'}
+```
+Isso demostra que o código está funcionando no padrão do Observer,notificando automaticamente os clientes sobre novos produtos e descontos do MyMarket.
+
+## Referências
+
+> **Arquitetura e Desenho de Software - Aula GoFs Criacionais**. Material de apoio em slides. Milene Serrano.
+
+> Gamma, Erich, et al. **Padrões de projetos: soluções reutilizáveis de software orientados a objetos.** Disponível em: Minha Biblioteca, Grupo A, 2000.
+
+> REFATORING GURU. **Observer Design Pattern**. Disponível em: https://refactoring.guru/pt-br/design-patterns/observer. Acesso em: 25 jul. 2024.
+
+
+## Versionamento
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
+| :------: | :---: | :-----: | :----: | :----: | :-----: |
+| 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
+| 1.1 | Texto introdutório | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |
+| 1.2 | Texto e diagrama de classes | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 24/07/2023 | 24/07/2023 |    
+| 1.3 | Código e Resultado | [Guilherme Oliveira](https://github.com/GG555-13)| [RodrigoWright](https://github.com/RodrigoWright) | 25/07/2023 | 25/07/2023 | 
+
+
