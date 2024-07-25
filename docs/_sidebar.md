@@ -38,7 +38,7 @@
       - [3.3.2 Composite](/PadroesDeProjeto/3.3.2.Composite.md)
       - [3.3.3 Command](/PadroesDeProjeto/3.3.3.Command.md)
       - [3.3.4 Strategy](/PadroesDeProjeto/3.3.4.Strategy.md)
-      - [3.3.5 Strategy](/PadroesDeProjeto/3.3.5.Visitor.md)
+      - [3.3.5 Visitor](/PadroesDeProjeto/3.3.5.Visitor.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
 
 - **Arquitetura de Software & Reutilização**
