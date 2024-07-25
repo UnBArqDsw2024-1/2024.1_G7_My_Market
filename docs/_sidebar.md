@@ -25,8 +25,20 @@
 - **Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadroesDeProjeto.md)
     - [3.1. Módulo Padrões de Projeto GoFs Criacionais](/PadroesDeProjeto/3.1.GoFsCriacionais.md)
+      - [3.1.1 Builder](/PadroesDeProjeto/3.1.1.Builder.md)
+      - [3.1.2 Factory Method](/PadroesDeProjeto/3.1.2.factoryMethod.md)
+      - [3.1.3.1 Prototype 1º Exemplo](/PadroesDeProjeto/3.1.3.1.Prototype1.md)
+      - [3.1.3.2 Prototype 2º Exemplo](/PadroesDeProjeto/3.1.3.2.Prototype2.md)
     - [3.2. Módulo Padrões de Projeto GoFs Estruturais](/PadroesDeProjeto/3.2.GoFsEstruturais.md)
+      - [3.2.1 Decorator](/PadroesDeProjeto/3.2.1.Decorator.md)
+      - [3.2.2 Facade](/PadroesDeProjeto/3.2.2.Facade.md)
+      - [3.2.3 Adapter](/PadroesDeProjeto/3.2.3.Adapter.md)
     - [3.3. Módulo Padrões de Projetos GoFs Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
+      - [3.3.1 Chais Of Responsibility](/PadroesDeProjeto/3.3.1.ChainsOfResponsability.md)
+      - [3.3.2 Composite](/PadroesDeProjeto/3.3.2.Composite.md)
+      - [3.3.3 Command](/PadroesDeProjeto/3.3.3.Command.md)
+      - [3.3.4 Strategy](/PadroesDeProjeto/3.3.4.Strategy.md)
+      - [3.3.5 Strategy](/PadroesDeProjeto/3.3.5.Visitor.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
 
 - **Arquitetura de Software & Reutilização**
