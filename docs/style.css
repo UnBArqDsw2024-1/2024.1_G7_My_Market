@@ -5,6 +5,7 @@
     --base-color           : white;
     --base-font-family     : monospace;
     --selection-color      : #AAB;
-    --sidebar-background   : #015958
+    --sidebar-background   : #015958;
+    --sidebar-width                               : 23rem;
   }
   
