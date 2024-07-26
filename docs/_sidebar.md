@@ -29,6 +29,7 @@
       - [3.1.2 Factory Method](/PadroesDeProjeto/GoF's/Criacionais/3.1.2.factoryMethod.md)
       - [3.1.3.1 Prototype 1º Exemplo](/PadroesDeProjeto/GoF's/Criacionais/3.1.3.1.Prototype1.md)
       - [3.1.3.2 Prototype 2º Exemplo](/PadroesDeProjeto/GoF's/Criacionais/3.1.3.2.Prototype2.md)
+      - [3.1.4 Abstract Factory](/PadroesDeProjeto/GoF's/Criacionais/3.1.4.AbstractFactory.md)
     - [3.2. Módulo Padrões de Projeto GoFs Estruturais](/PadroesDeProjeto/GoF's/Estruturais/3.2.GoFsEstruturais.md)
       - [3.2.1 Decorator](/PadroesDeProjeto/GoF's/Estruturais/3.2.1.Decorator.md)
       - [3.2.2 Facade](/PadroesDeProjeto/GoF's/Estruturais/3.2.2.Facade.md)
