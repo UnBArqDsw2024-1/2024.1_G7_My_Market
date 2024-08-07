@@ -48,6 +48,9 @@ Tabela 2: Casos de uso elicitados
 
 ### Diagrama de Casos de Uso (DCU)
 
+O diagrama de caso de uso pode ser visualizado abaixo:
+![Diagrama de Casos de Uso](https://github.com/user-attachments/assets/ad8d0df4-530a-48c4-abd1-a78b5c6b10f5)
+
 ## 4. Visão Lógica
 
 A Visão Lógica descreve a estrutura estática do sistema, mostrando como os principais componentes, como classes e pacotes, estão organizados e como interagem. É essencial para compreender as funcionalidades e a arquitetura interna do sistema.
@@ -56,7 +59,8 @@ A Visão Lógica descreve a estrutura estática do sistema, mostrando como os pr
 
 O diagrama de classes mostra a estrutura do sistema de descontos e cupons, detalhando as classes, atributos, métodos e suas relações. Este diagrama é fundamental para o desenvolvimento e a documentação do sistema.
 
-O diagrama de classes pode ser visualizado [aqui](https://lucid.app/documents/embedded/6faa106a-bd21-44dc-8ed7-5a0dd9ee38c8).
+O diagrama de classes pode ser visualizado abaixo:
+![Diagrama de Classes](https://github.com/user-attachments/assets/26e83e4a-66ef-4ae5-9f28-9993eb4b3081)
 
 ### 4.2 Diagrama de Estados
 
@@ -70,7 +74,9 @@ O diagrama de estados representa os diferentes estados que um cupom pode ter ao 
 
 O diagrama de pacotes organiza e visualiza a estrutura modular do sistema de cupons e descontos, mostrando como os pacotes se agrupam e as dependências entre eles.
 
-O diagrama de pacotes pode ser visualizado [aqui](https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Diagrama-de-Pacotes.jpeg).
+O diagrama de pacotes pode ser visualizado a seguir:
+
+![Diagrama de Pacotes](https://github.com/user-attachments/assets/76d2e89e-a9b3-4b09-a2eb-c3a29d86dd15)
 
 ## 5. Visão de Processo
 
@@ -102,7 +108,9 @@ A visão de processo descreve como as atividades essenciais do sistema de cupons
 
 A Visão de Implementação descreve como o sistema é organizado em termos de módulos e pacotes de código. Mostra a estrutura dos componentes e suas interações para uma implementação eficaz.
 
-O diagrama de componentes pode ser visualizado [aqui](https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/DiagramaDeComponentes.jpeg).
+O diagrama de componentes pode ser visualizado abaixo:
+![Diagrama de Componentes](https://github.com/user-attachments/assets/cc637887-fc8a-457f-8e37-78425b30bbcd)
+
 
 ## 7. Visão de Implantação
 
