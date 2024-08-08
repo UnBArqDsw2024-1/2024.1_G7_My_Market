@@ -116,6 +116,14 @@ O diagrama de componentes pode ser visualizado abaixo:
 
 A Visão de Implantação detalha a distribuição física dos componentes de software e como eles interagem em um ambiente de produção.
 
+Os diagramas de implantação são uma ferramenta essencial para arquitetos de software e engenheiros de sistemas, permitindo a visualização e o planejamento da distribuição física dos componentes de software. Eles garantem que todos os aspectos físicos da implantação do sistema sejam compreendidos e documentados, facilitando a comunicação entre as partes interessadas e assegurando uma implementação bem-sucedida do sistema.
+
+Este documento apresenta a arquitetura de implantação de um sistema distribuído, com foco em eficiência, segurança e escalabilidade. O sistema é estruturado em vários nós principais: Cliente, Proxy, Web Server e Database, cada um contendo componentes e entidades específicas. É importante destacar que o diagrama foi elaborado sem a definição completa das tecnologias a serem utilizadas, podendo sofrer alterações conforme as decisões do grupo evoluem.
+
+<div align = "center"><img src="https://github.com/user-attachments/assets/72ee26a9-e61d-4762-b8a5-6e650f8dcc4d" alt="Diagrama de implantação">
+<p>Figura 6 - Diagrama de Implantação<br> Autor: Mateus Orlando</p></div>
+
+
 ### 7.1 Nó Cliente
 - Componentes:
   - Interface Web: Acesso ao sistema de cupons e descontos.
