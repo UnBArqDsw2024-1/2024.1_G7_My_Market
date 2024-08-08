@@ -8,7 +8,7 @@ Este DAS é focado no fluxo de descontos e cupons para o projeto "SupermarketX",
 
 ## 2. Objetivo
 
-Este documento visa representar a arquitetura do sistema de fluxo de descontos e cupons do projeto "SupermarketX", utilizando o modelo arquitetural **4+1**. A abordagem estruturada captura as diversas preocupações dos stakeholders e proporciona uma visão clara e compreensível do sistema.
+Este documento visa representar a arquitetura do sistema de fluxo de descontos e cupons do projeto "MyMrket", utilizando o modelo arquitetural **4+1**. A abordagem estruturada captura as diversas preocupações dos stakeholders e proporciona uma visão clara e compreensível do sistema.
 
 ![Exemplo de modelo arquitetural 4+1](image.png)
 
