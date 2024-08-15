@@ -12,7 +12,7 @@ Este documento tem como objetivo ilustrar a arquitetura do sistema de gerenciame
 
 ![Exemplo de modelo arquitetural 4+1](image.png)
 
-<h6 align = "center">Figura 01: Exemplo de modelo arquitetural 4+1. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
+<h6 align = "center">Figura 1: Exemplo de modelo arquitetural 4+1. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
 
 ## 3. Visão de Casos de Uso
 
@@ -39,8 +39,8 @@ Tabela 2: Casos de uso elicitados
 ### Diagrama de Casos de Uso (DCU)
 
 O diagrama de caso de uso pode ser visualizado abaixo:
-![Diagrama de Casos de Uso]()
-<p>Figura 02 - Diagrama de Casos de Uso.<br> Autor: Guilherme Basilio e Miguel de Frias.</p></div>
+<div align = "center"><img src="" alt="Diagrama de Casos de Uso">
+<p>Figura 2 - Diagrama de Casos de Uso<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ## 4. Visão Lógica
 
@@ -51,15 +51,16 @@ A Visão Lógica apresenta a estrutura estática do sistema, detalhando a organi
 O diagrama de classes exibe a estrutura do sistema de gerenciamento do chatbot de atendimento, detalhando as classes, seus atributos, métodos e as relações entre elas. Esse diagrama é essencial para o desenvolvimento e a documentação do sistema.
 
 O diagrama de classes pode ser visualizado abaixo:
-![Diagrama de Classes]()
+<div align = "center"><img src="" alt="Diagrama de Classes">
+<p>Figura 3 - Diagrama de Classes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ### 4.2 Diagrama de Estados
 
 O diagrama de estados ilustra os diferentes estados pelos quais um chatbot de atendimento pode passar durante seu ciclo de vida, incluindo estados como criação, validação, aplicação e expiração.
 
 *Fluxo de Estados do Chatbot:*
-<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/DiagramaEstado.jpeg" alt="Diagrama de Estados">
-<p>Figura 2 - Diagrama de Estados<br> Autor: Guilherme Nishimura</p></div>
+<div align = "center"><img src="" alt="Diagrama de Estados">
+<p>Figura 4 - Diagrama de Estados<br> Autor: Guilherme Basilio e Miguel de Frias </p></div>
 
 ### 4.3 Diagrama de Pacotes
 
@@ -67,7 +68,8 @@ O diagrama de pacotes organiza e representa a estrutura modular do chatbot de at
 
 O diagrama de pacotes pode ser visualizado a seguir:
 
-![Diagrama de Pacotes]()
+<div align = "center"><img src="" alt="Diagrama de Pacotes">
+<p>Figura 5 - Diagrama de Pacotes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ## 5. Visão de Processo
 
@@ -100,7 +102,8 @@ A visão de processo detalha como as atividades fundamentais do chatbot de atend
 A Visão de Implementação detalha a organização do sistema em termos de módulos e pacotes de código. Ela ilustra como os componentes estão estruturados e como interagem entre si para garantir uma implementação eficiente.
 
 O diagrama de componentes pode ser visualizado abaixo:
-![Diagrama de Componentes]()
+<div align = "center"><img src="" alt="Diagrama de Implementação">
+<p>Figura 6 - Diagrama de Implementação<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 
 ## 7. Visão de Implantação
@@ -111,8 +114,8 @@ Os diagramas de implantação são fundamentais para arquitetos de software e en
 
 Este documento apresenta a arquitetura de implantação de um sistema distribuído, com ênfase em eficiência, segurança e escalabilidade. O sistema é organizado em vários nós principais: Cliente, Proxy, Web Server e Database, cada um contendo componentes e entidades específicas. Vale ressaltar que o diagrama foi criado sem a definição completa das tecnologias a serem utilizadas e pode ser ajustado conforme as decisões do grupo evoluem.
 
-<div align = "center"><img src="https://github.com/user-attachments/assets/72ee26a9-e61d-4762-b8a5-6e650f8dcc4d" alt="Diagrama de implantação" alt="Diagrama de implantação">
-<p>Figura 6 - Diagrama de Implantação<br> Autor: Mateus Orlando</p></div>
+<div align = "center"><img src="" alt="Diagrama de implantação" alt="Diagrama de implantação">
+<p>Figura 7 - Diagrama de Implantação<br> Autor: Guilherme Basilio e Miguel de Frias </p></div>
 
 ## 7. Arquitetura de Implantação
 
