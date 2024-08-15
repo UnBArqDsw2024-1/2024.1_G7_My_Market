@@ -66,4 +66,8 @@ public class UserDetail implements UserDetails {
 		return this.account.isEnabled();
 	}
 
+	public Account getAccount() {
+		return this.account;
+	}
+
 }
