@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
 import { LojaContext, LojaProvider } from './LojaContext';
-import Product from './Product';
+import Product from './components/Product/Product';
 import DiscountA from './visitors/DiscountA';
 import DiscountB from './visitors/DiscountB';
+import { ChakraProvider, Button, Box, Grid, GridItem } from '@chakra-ui/react';
+import PageHeader from "./components/PageHeader/index";
+import { theme } from "./styles/theme"
 
 const App = () => {
     const { produtos, adicionarProduto } = useContext(LojaContext);
@@ -15,14 +18,24 @@ const App = () => {
     };
 
     return (
-        <div>
-            <h1>Loja de Roupas</h1>
-            {produtos.map((produto, index) => (
-                <Product key={index} nome={produto.nome} preco={produto.preco} onApplyDiscount={() => aplicarDesconto(produto)} />
-            ))}
-            <button onClick={() => adicionarProduto({ nome: 'Camisa', preco: 100 })}>Adicionar Camisa</button>
-            <button onClick={() => adicionarProduto({ nome: 'Casaco', preco: 200 })}>Adicionar Casaco</button>
-        </div>
+        <ChakraProvider theme={theme}>
+            <PageHeader title="MyMarket"/>
+            <Button onClick={() => adicionarProduto({ nome: 'Camisa', preco: 100 })}>Adicionar Camisa</Button>
+            <Button onClick={() => adicionarProduto({ nome: 'Casaco', preco: 200 })}>Adicionar Casaco</Button>
+
+            <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+                
+                    {produtos.map((produto, index) => (
+                        <GridItem key={index}>
+                            <Product key={index} nome={produto.nome} preco={produto.preco} onApplyDiscount={() => aplicarDesconto(produto)} />
+                        </GridItem>))
+                    }
+            </Grid>
+            <Box display="flex" flexDirection="row" alignItems="center">
+                
+            </Box>
+        </ChakraProvider>
+        
     );
 };
 
