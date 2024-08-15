@@ -16,5 +16,6 @@ java ChainsOfResponsibility.ChainOfResponsibilityTest
 
 ## **Obs**: Após a compilação, certifique-se de que os arquivos .class estão no diretório ChainsOfResponsibility. O Java precisa encontrar a classe compilada no mesmo diretório indicado pelo pacote, semelhante a imagem abaixo:
 
-imagem aqui
+![image](https://github.com/user-attachments/assets/e6089d29-6616-4230-a6ef-cb30540167a7)
+
 <h6 align = "center">Figura 01: Arquivos ".class". Fonte: Mateus Orlando</h6>
