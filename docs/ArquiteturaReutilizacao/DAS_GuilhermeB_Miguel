@@ -1,5 +1,7 @@
 # Documento de Arquitetura de Software (DAS) - Sistema de Gerenciamento de Estoque e Inventário
 
+## O documento em questão foi criado e desenvolvido pelos alunos [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)
+
 ## 1. Introdução
 
 O **Documento de Arquitetura de Software (DAS)** É um documento crucial no desenvolvimento de sistemas, oferecendo uma visão aprofundada da estrutura e organização do sistema. Ele detalha os principais componentes, suas interações e os princípios de design que orientam sua construção, ajudando a comunicar de forma eficaz entre todas as partes envolvidas e assegurando uma compreensão compartilhada do sistema.
@@ -56,7 +58,9 @@ O diagrama de classes pode ser visualizado abaixo:
 
 ### 4.2 Diagrama de Estados
 
-O diagrama de estados ilustra os diferentes estados pelos quais um chatbot de atendimento pode passar durante seu ciclo de vida, incluindo estados como criação, validação, aplicação e expiração.
+Um diagrama de estados é uma representação gráfica que descreve os estados possíveis de um objeto ao longo do tempo, juntamente com as transições entre esses estados. Ele mostra como o sistema reage a eventos ou condições, detalhando as mudanças de estado de um objeto específico. Usado frequentemente para modelar o comportamento dinâmico de sistemas, o diagrama ajuda a entender e projetar processos, especialmente aqueles que envolvem ciclos de vida, como o processamento de pedidos ou interações de usuários.
+
+O diagrama de estados a seguir, ilustra os diferentes estados que ocorrem durante a funcionalidade Troca e Devolução, oferecida pelo chatbot.
 
 *Fluxo de Estados do Chatbot:*
 <div align = "center"><img src="" alt="Diagrama de Estados">
