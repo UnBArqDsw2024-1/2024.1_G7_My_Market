@@ -58,6 +58,6 @@ Para testar o gerenciador de carrinho de compras, fizemos o teste apresentado ab
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização |
 | :------: | :---: | :-----: | :----: | :----: |
-| 1.0   | Adaptação do código de gerenciamento de carrinho de compras para o contexto do projeto | Pedro Henrique | Guilherme Nishimura | 15/08/2024 |
-| 2.0   | Documentação do código do gerenciador de carrinho de compras | Pedro Henrique | Guilherme Nishimura | 15/08/2024 |
-| 2.1   | Adição das imagens ao documento | Pedro Henrique | Guilherme Nishimura | 15/08/2024 |
+| 1.0   | Adaptação do código de gerenciamento de carrinho de compras para o contexto do projeto | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
+| 2.0   | Documentação do código do gerenciador de carrinho de compras | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
+| 2.1   | Adição das imagens ao documento | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
