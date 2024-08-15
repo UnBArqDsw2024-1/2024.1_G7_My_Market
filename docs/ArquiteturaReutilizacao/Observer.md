@@ -1,0 +1,69 @@
+# Reutilização
+
+## Notificação de promoções 
+
+Pela pesquisa feita no diagrama de classes  ,foi constadado a necessidade de notificar clientes  de promoções de produtos. Quando um produto entra em promoção, os clientes que estão inscritos para receber notificações sobre promoções desse produto serão avisados automaticamente. O padrão Observer será aplicado para gerenciar essas notificações.
+
+O padrão Observer é ideal para situações onde há uma necessidade de comunicação em tempo real entre um objeto central (o sujeito) e vários outros objetos interessados (os observadores), mantendo o sistema modular e fácil de manter.
+
+### 1. Interface Observador
+
+Interface para os observadores (clientes que recebem notificações):.
+
+![image](https://github.com/user-attachments/assets/57567d84-e71b-4cc4-8b91-c32a738b3c4d)
+
+
+<h6 align = "center">Figura 01: Interface Observador. Fonte: Guilherme Nishimura.</h6>
+
+### 2. Interface Sujeito
+
+Interface para o sujeito (produto em promoção), que permitirá a adição e remoção de observadores:
+
+![image](https://github.com/user-attachments/assets/16d063d5-90ac-40f1-b57b-874c9a2dfb38)
+
+
+<h6 align = "center">Figura 02: Interface Sujeito. Fonte: Guilherme Nishimura.</h6>
+
+### 3. Implementação do Produto (Sujeito)
+
+Criação uma classe Produto, que implementará a interface Sujeito e manterá uma lista de observadores
+
+![image](https://github.com/user-attachments/assets/69b94ca0-0ec5-4426-b12e-886330e26bb7)
+
+
+<h6 align = "center">Figura 03: Implementação do Produto (Sujeito). Fonte: Guilherme Nishimura.</h6>
+
+### 4. Implementação dos Observadores (Clientes)
+
+Criação de classes para os observadores, que receberão as notificações sobre promoções.
+
+![image](https://github.com/user-attachments/assets/8767592e-bab6-4778-a899-cf2e8288e98e)
+
+
+<h6 align = "center">Figura 04: Implementação dos Observadores (Clientes). Fonte: Guilherme Nishimura.</h6>
+
+### 5.  Utilizando o Padrão Observer
+
+Simular o processo de notificação de clientes sobre uma promoção
+
+
+![image](https://github.com/user-attachments/assets/c53d1322-8439-413b-a93d-33b33d4d4b91)
+
+
+
+<h6 align = "center">Figura 05:  Utilizando o Padrão Observer. Fonte: Guilherme Nishimura.</h6>
+
+### 5. Exemplo de Uso
+
+A seguinte figura descreve o resultado do teste.
+
+![image](https://github.com/user-attachments/assets/8fbf30b0-8a8e-4f0e-a312-fb51955b2e58)
+
+<h6 align = "center">Figura 06:  Resultado. Fonte: Guilherme Nishimura.</h6>
+
+
+## Versionamento
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização |
+| :------: | :---: | :-----: | :----: | :----: |
+| 1.0   | Criação e modificação do artefato  | [Guilherme Nishimura](https://github.com/Guilherme-Nishi) | Pedro Henrique |14/08/2024
