@@ -37,7 +37,6 @@ public class AccountController {
         return ResponseEntity.ok().build();
     }
 
-
     @PatchMapping("/auth/accounts/current/patch-username")
     public ResponseEntity<Void> patchUsername(HttpServletRequest request, HttpServletResponse response,
                                               Authentication authentication, @RequestBody @Valid UsernameRequestDTO usernameRequestDTO) {
