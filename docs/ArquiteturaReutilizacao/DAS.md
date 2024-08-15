@@ -6,11 +6,14 @@ O **Documento de Arquitetura de Software (DAS)** é um artefato essencial no des
 
 Este DAS é focado no fluxo de descontos e cupons para o projeto "SupermarketX", um sistema de e-commerce para um supermercado. O documento utiliza o modelo arquitetural **4+1**, que inclui cinco visões diferentes para capturar e abordar diversas preocupações dos stakeholders, conforme proposto por Philippe Kruchten em 1995.
 
+Este documento foi realizado por Guilherme Nishimura e Pedro Henrique
+
 ## 2. Objetivo
 
-Este documento visa representar a arquitetura do sistema de fluxo de descontos e cupons do projeto "MyMrket", utilizando o modelo arquitetural **4+1**. A abordagem estruturada captura as diversas preocupações dos stakeholders e proporciona uma visão clara e compreensível do sistema.
+Este documento visa representar a arquitetura do sistema de fluxo de descontos e cupons do projeto MyMarket , utilizando o modelo arquitetural **4+1**. A abordagem estruturada captura as diversas preocupações dos stakeholders e proporciona uma visão clara e compreensível do sistema.
 
-![Exemplo de modelo arquitetural 4+1](image.png)
+![image](https://github.com/user-attachments/assets/e1cf744b-a4c5-4abe-acea-73802e58f2b5)
+
 
 <h6 align = "center">Figura 01: Exemplo de modelo arquitetural 4+1. Fonte: Mateus Orlando, Pedro Lucas e Thiago Vivan.</h6>
 
@@ -148,10 +151,16 @@ Este documento apresenta a arquitetura de implantação de um sistema distribuí
 
 ### Conclusão
 
-A arquitetura apresentada para o sistema de descontos e cupons do "SupermarketX" garante uma solução robusta e escalável, com ênfase na eficiência, segurança e usabilidade. A visão detalhada da distribuição física e das interações entre os componentes proporciona uma base sólida para a implementação e manutenção contínua do sistema.
+A arquitetura apresentada para o sistema de descontos e cupons do My Market que  garante uma solução robusta e escalável, com ênfase na eficiência, segurança e usabilidade. A visão detalhada da distribuição física e das interações entre os componentes proporciona uma base sólida para a implementação e manutenção contínua do sistema.
 
 ## Referências
 
 > **Arquitetura e Desenho de Software - Aula DAS**. Material de apoio em slides. Milene Serrano.
 
 > FAKHROUTDINOV, Kirill. UML. UML 2.5 Diagrams Overview. [S. l.], 2023. Disponível em: https://www.uml-diagrams.org/uml-25-diagrams.html. Acesso em: 02 ago. 2024.
+
+| Versão | Alteração |  Responsável  | Revisor | Data de realização |
+| :------: | :---: | :-----: | :----: | :----: |
+| 1.0    | Criação inicial do documento e adição de informações  | [Guilherme Nishimura](https://github.com/Guilherme-Nishi) e [Pedro Henrique](https://github.com/pehenobra2) |[ Guilherme Nishimura](https://github.com/Guilherme-Nishi)  e [Pedro Henrique](https://github.com/pehenobra2) | 09/08/2024|
+| 2.0    | Adição de diagramas  | [Guilherme Nishimura](https://github.com/Guilherme-Nishi) e [Pedro Henrique](https://github.com/pehenobra2) |[ Guilherme Nishimura](https://github.com/Guilherme-Nishi) e [Pedro Henrique](https://github.com/pehenobra2) | 10/08/2024|
+| 3.0    | Mais ajustes  | [Guilherme Nishimura](https://github.com/Guilherme-Nishi),  e [Pedro Henrique](https://github.com/pehenobra2) | [Guilherme Nishimura](https://github.com/Guilherme-Nishi)  e [Pedro Henrique](https://github.com/pehenobra2) | 10/08/2024|
