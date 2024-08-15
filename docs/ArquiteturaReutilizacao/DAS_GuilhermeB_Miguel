@@ -154,3 +154,12 @@ A arquitetura descrita para o sistema de chatbot de atendimento oferece uma solu
 ## Referências
 
 > **Arquitetura e Desenho de Software - Aula DAS**. Material de apoio em slides. Milene Serrano.
+
+## Histórico de Versões
+
+| Versão |     Data    | Descrição   | Autor(es) | Revisor(es) |
+| ------ | ----------- | ----------- | --------- | ----------- |
+| `1.0`  | 12/08/2024 | Criação da estrutura do artefato |  [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)| [Miguel de Frias](https://github.com/migueldefrias) |
+| `2.0`  | 12/08/2024 | Desenvolvimento do Artefato | [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES) | [Miguel de Frias](https://github.com/migueldefrias) |
+| `3.0`  | 12/08/2024 | Adição do diagrama de Casos de Uso | [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)| [Miguel de Frias](https://github.com/migueldefrias) |
+| `4.0`  | 15/08/2024 | Adição dos diagramas restantes | [Miguel de Frias](https://github.com/migueldefrias)  | [Guilherme Basilio](https://github.com/GuilhermeBES)|
