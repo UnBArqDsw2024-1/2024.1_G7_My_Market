@@ -105,9 +105,9 @@ A visão de processo detalha como as atividades fundamentais do chatbot de atend
 
 A Visão de Implementação detalha a organização do sistema em termos de módulos e pacotes de código. Ela ilustra como os componentes estão estruturados e como interagem entre si para garantir uma implementação eficiente.
 
-O diagrama de componentes pode ser visualizado abaixo:
+O diagrama de Componentes pode ser visualizado abaixo:
 <div align = "center"><img src="" alt="Diagrama de Implementação">
-<p>Figura 6 - Diagrama de Implementação<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
+<p>Figura 6 - Diagrama de Componentes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 
 ## 7. Visão de Implantação
