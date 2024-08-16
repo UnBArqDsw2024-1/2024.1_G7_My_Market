@@ -54,9 +54,10 @@
       - [4.1.1 Sumário DAS Individual](/ArquiteturaReutilizacao/4.1.1.sumario.md)
     - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
       - [4.2.1 Visão Externa](/ArquiteturaReutilizacao/4.2.1.VisaoExterna.md)
-      - [4.2.2 Validador de CPF](/ArquiteturaReutilizacao/4.2.2.CPFValidador.md)
+      - [4.2.2 Validador de CPF](/ArquiteturaReutilizacao/4.2.2.CPFValidator.md)
       - [4.2.3 ChainsOfResponsibility](/ArquiteturaReutilizacao/4.2.3.ChainsOfResponsibility.md)
-      - [4.2.2 Obsrver](/ArquiteturaReutilizacao/4.2.4.Observer.md)
+      - [4.2.4 Obsrver](/ArquiteturaReutilizacao/4.2.4.Observer.md)
+      - [4.2.5 Singleton](/ArquiteturaReutilizacao/4.2.5.Singleton.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
     - [4.4. Entrega Extra](/ArquiteturaReutilizacao/4.4.EntregaExtra.md)
 
