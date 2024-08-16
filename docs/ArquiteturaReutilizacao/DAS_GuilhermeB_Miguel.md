@@ -41,7 +41,7 @@ Tabela 2: Casos de uso elicitados
 ### Diagrama de Casos de Uso (DCU)
 
 O diagrama de caso de uso pode ser visualizado abaixo:
-<div align = "center"><img src="" alt="Diagrama de Casos de Uso">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_UseCases_DAS.jpeg" alt="Diagrama de Casos de Uso">
 <p>Figura 2 - Diagrama de Casos de Uso<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ## 4. Visão Lógica
@@ -53,7 +53,7 @@ A Visão Lógica apresenta a estrutura estática do sistema, detalhando a organi
 O diagrama de classes exibe a estrutura do sistema de gerenciamento do chatbot de atendimento, detalhando as classes, seus atributos, métodos e as relações entre elas. Esse diagrama é essencial para o desenvolvimento e a documentação do sistema.
 
 O diagrama de classes pode ser visualizado abaixo:
-<div align = "center"><img src="" alt="Diagrama de Classes">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_DiagramaDeClasses_DAS.png" alt="Diagrama de Classes">
 <p>Figura 3 - Diagrama de Classes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ### 4.2 Diagrama de Estados
@@ -63,7 +63,7 @@ Um diagrama de estados é uma representação gráfica que descreve os estados p
 O diagrama de estados a seguir, ilustra os diferentes estados que ocorrem durante a funcionalidade Troca e Devolução, oferecida pelo chatbot.
 
 *Fluxo de Estados do Chatbot:*
-<div align = "center"><img src="" alt="Diagrama de Estados">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_DiagramaDeEstados_DAS.png" alt="Diagrama de Estados">
 <p>Figura 4 - Diagrama de Estados<br> Autor: Guilherme Basilio e Miguel de Frias </p></div>
 
 ### 4.3 Diagrama de Pacotes
@@ -72,7 +72,7 @@ O diagrama de pacotes organiza e representa a estrutura modular do chatbot de at
 
 O diagrama de pacotes pode ser visualizado a seguir:
 
-<div align = "center"><img src="" alt="Diagrama de Pacotes">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_DiagramaDePacotes_DAS.png" alt="Diagrama de Pacotes">
 <p>Figura 5 - Diagrama de Pacotes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ## 5. Visão de Processo
