@@ -29,3 +29,73 @@ Para iniciar o site localmente, utilize o comando:
 ```shell
 docsify serve ./docs
 ```
+
+
+### Projeto MyMarket
+
+## Configuração e Execução
+# Pré-requisitos
+
+Certifique-se de ter o Docker e o Docker Compose instalados no seu sistema.
+
+```
+docker-compose --version
+```
+
+### Instalação do Docker Compose no Linux
+
+## Execute os seguintes comandos no terminal:
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Verifique se o Docker Compose está disponível:
+
+```
+docker-compose --version
+```
+
+# Primeira Execução
+
+Na primeira vez que for rodar o projeto, utilize o comando abaixo para construir e iniciar os contêineres:
+
+```
+cd app/mvp
+```
+
+```
+docker-compose up --build
+```
+
+```
+cd app/frontend
+```
+
+```
+npm run start
+```
+
+Execuções Futuras
+
+Para iniciar o projeto nas próximas vezes, apenas utilize o comando:
+
+```
+cd app/mvp
+```
+
+```
+docker-compose up
+```
+
+```
+cd app/frontend
+```
+
+```
+npm run start
+```
