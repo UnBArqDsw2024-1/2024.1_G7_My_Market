@@ -60,6 +60,7 @@
       - [4.2.5 Singleton](/ArquiteturaReutilizacao/4.2.5.Singleton.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
     - [4.4. Entrega Extra](/ArquiteturaReutilizacao/4.4.EntregaExtra.md)
+    - [4.5. Documentação do MVP](/ArquiteturaReutilizacao/4.5.DescricaoMVP.md)
 
 - **Atas de Reunião**
   - [03/04/2024](/Atas/03_04_2024.md)
