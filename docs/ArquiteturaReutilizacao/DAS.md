@@ -18,7 +18,7 @@ Além disso, fizemos também a visão de Dados.
 
 ## 3. Visão de Casos de Uso
 
-**Os alunos que participaram da documentação dessa visão foram: Pedro Lucas, GUilherme Nishimura e Mateus Orlando**
+**Os alunos que participaram da documentação dessa visão foram: Pedro Lucas, GUilherme Nishimura, Miguel de Frias, Guilherme Basilio e Mateus Orlando**
 
 Casos de uso são uma técnica de modelagem usada para descrever a funcionalidade de um sistema de forma a demonstrar como ele interage com entidades externas, conhecidas como atores. Em essência, um caso de uso descreve quem pode fazer o quê com o sistema em questão. Esta abordagem é utilizada para capturar requisitos funcionais, fornecendo uma visão clara de como o sistema deve se comportar.
 
@@ -169,7 +169,7 @@ Este documento apresenta a arquitetura de implantação de um sistema distribuí
 
 # 8 Visão de Dados
  
-**Os alunos que participaram da documentação dessa visão foram: Guilherme Oliveira Mendes e Rodrigo Wright**
+**Os alunos que participaram da documentação dessa visão foram: Guilherme Oliveira Mendes, João victor Costa(P.O) e Rodrigo Wright**
 
 A visão de dados é um componente essencial na arquitetura de sistemas, responsável por descrever a estrutura, organização e fluxo dos dados dentro de uma aplicação. Ela fornece uma compreensão detalhada de como os dados são armazenados, acessados e manipulados, servindo como um guia para garantir a integridade, consistência e segurança das informações no sistema.
 <br>
