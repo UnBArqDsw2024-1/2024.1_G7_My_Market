@@ -1,13 +1,5 @@
 version: '3'
 services:
-  angular:
-    build: ./frontend
-    ports:
-      - "4200:4200"
-    depends_on:
-      - spring-boot
-    environment:
-      - BACKEND_URL=http://spring-boot:8080
 
   spring-boot:
     build: ./mvp

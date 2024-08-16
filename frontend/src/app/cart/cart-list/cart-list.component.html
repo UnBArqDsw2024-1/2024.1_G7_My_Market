@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="text-xl">Itens do carrinho</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    @for (cartItem of cartItems(); track cartItem) {
+  <div>
+      <app-cart-item [item]="cartItem"></app-cart-item>
+    </div>
+}
+  </mat-card-content>
+</mat-card>
