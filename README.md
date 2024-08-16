@@ -64,17 +64,25 @@ docker-compose --version
 
 Na primeira vez que for rodar o projeto, utilize o comando abaixo para construir e iniciar os contêineres:
 
-```
-cd app/mvp
-```
+#### Na raiz do diretório onde está o arquivo docker-compose, use o comando:
 
 ```
 docker-compose up --build
 ```
 
+#### Vá para o diretório frontend:
+
 ```
-cd app/frontend
+cd frontend
 ```
+
+#### Instale as dependências do frontend: 
+
+```
+npm install
+```
+
+#### Inicie o frontend:
 
 ```
 npm run start
@@ -85,15 +93,11 @@ npm run start
 Para iniciar o projeto nas próximas vezes, apenas utilize o comando:
 
 ```
-cd app/mvp
-```
-
-```
 docker-compose up
 ```
 
 ```
-cd app/frontend
+cd frontend
 ```
 
 ```
