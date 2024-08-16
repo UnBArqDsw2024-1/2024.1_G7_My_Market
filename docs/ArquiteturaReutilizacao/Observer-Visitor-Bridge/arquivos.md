@@ -1,13 +1,207 @@
 # Arquivos
 
 ## Introdução
-
 Aqui nós apresentaremos a junção de alguns padrões de projeto em um projeto maior utilizando React. Para isso, utilizamos alguns componentes provenientes de outros projetos e os reciclamos para demonstrar a reutilização de código em um projeto. Alguns dos códigos re-utilizados incluem o “PageHeader” para o Header MyMarket, “Theme” para o design padrão do projeto, o “Chakra ui” que adiciona diversos tipos de componentes para o código pré-prontos.
- 
 ![Components](https://github.com/user-attachments/assets/c8319937-a1eb-4299-9e5b-906b42ed1587)
+<h6 align = "center">Figura 1: Diagrama dos componentesr</h6>
+
 
 ## Versionamento
+Esses códigos em conjunto implementam uma aplicação React onde é possível adicionar produtos à loja, aplicar diferentes tamanhos e descontos a eles, e gerenciar o estado global da aplicação utilizando a Context API. O padrão Visitor é empregado para aplicar diferentes operações (descontos) aos produtos de maneira flexível e extensível:
+
+[Link de demostração do Código](https://youtu.be/Awd4LvN6cZA)
+
+#### 1. **Classe Base de Tamanho:**
+
+```javascript
+class Tamanho {
+    aplicarTamanho() {
+        throw new Error('Este método deve ser implementado');
+    }
+}
+
+export default Tamanho;
+```
+
+A classe `Tamanho` é uma classe base abstrata que define a estrutura para diferentes tamanhos de produtos. Ela contém um método `aplicarTamanho()` que deve ser implementado por suas subclasses. Essa classe segue o princípio de que cada tamanho específico deve fornecer sua própria implementação do método.
+
+#### 2. **Subclasses de Tamanho:**
+
+```javascript
+import Tamanho from './Tamanho';
+
+class TamanhoGrande extends Tamanho {
+    aplicarTamanho() {
+        console.log('Aplicando tamanho grande');
+    }
+}
+
+export default TamanhoGrande;
+```
+
+```javascript
+import Tamanho from './Tamanho';
+
+class TamanhoPequeno extends Tamanho {
+    aplicarTamanho() {
+        console.log('Aplicando tamanho pequeno');
+    }
+}
+
+export default TamanhoPequeno;
+```
+
+As classes `TamanhoGrande` e `TamanhoPequeno` são subclasses de `Tamanho` que implementam o método `aplicarTamanho()`. Cada uma exibe uma mensagem no console indicando o tamanho aplicado ao produto. Essas classes representam os diferentes tamanhos que podem ser atribuídos a um produto.
+
+#### 3. **Classe Base Visitor:**
+
+```javascript
+class Visitor {
+    visitarProduto(produto) {
+        throw new Error('Este método deve ser implementado');
+    }
+}
+
+export default Visitor;
+```
+
+A classe `Visitor` é uma classe base abstrata que define o método `visitarProduto(produto)` para aplicar operações a produtos. Esse método é a base do padrão de projeto Visitor, onde diferentes operações podem ser aplicadas a objetos sem modificar suas classes.
+
+#### 4. **Subclasse de Visitor - DiscountA:**
+
+```javascript
+import Visitor from './Visitor';
+
+class DiscountA extends Visitor {
+    visitarProduto(produto) {
+        console.log(`Aplicando 10% de desconto em ${produto.nome}`);
+        const precoComDesconto = produto.preco * 0.9;
+        console.log(`Preço com desconto: R$${precoComDesconto}`);
+    }
+}
+
+export default DiscountA;
+```
+
+A classe `DiscountA` implementa o método `visitarProduto()` da classe `Visitor`. Ela aplica um desconto de 10% ao preço do produto e exibe o novo preço no console. Essa classe demonstra como o padrão Visitor pode ser utilizado para aplicar diferentes operações, como descontos, em produtos.
+
+#### 5. **Componentes React para Produtos com Tamanho:**
+
+```javascript
+import React from 'react';
+
+export const Camisa = ({ Tamanho }) => (
+  <div>
+    Camisa: <Tamanho />
+  </div>
+);
+
+export const Casaco = ({ Tamanho }) => (
+  <div>
+    Casaco: <Tamanho />
+  </div>
+);
+```
+
+Os componentes `Camisa` e `Casaco` são componentes React que recebem um componente de tamanho (`Tamanho`) como prop e o exibem junto com o nome do produto. Esses componentes permitem a aplicação dinâmica de tamanhos a diferentes tipos de produtos.
+
+#### 6. **Contexto de Loja (`LojaContext`):**
+
+```javascript
+import React, { createContext, useState } from 'react';
+
+const LojaContext = createContext();
+
+const LojaProvider = ({ children }) => {
+    const [produtos, setProdutos] = useState([]);
+    const [descontos, setDescontos] = useState({});
+
+    const adicionarProduto = (produto) => {
+        setProdutos([...produtos, produto]);
+        // Notificar observadores (clientes)
+    };
+
+    const adicionarDesconto = (produto, desconto) => {
+        setDescontos({ ...descontos, [produto]: desconto });
+        // Notificar observadores (clientes)
+    };
+
+    return (
+        <LojaContext.Provider value={{ produtos, descontos, adicionarProduto, adicionarDesconto }}>
+            {children}
+        </LojaContext.Provider>
+    );
+};
+
+export { LojaContext, LojaProvider };
+```
+
+Esse código cria um contexto de loja usando a Context API do React. O `LojaProvider` gerencia o estado global da loja, que inclui a lista de produtos e descontos aplicados. As funções `adicionarProduto` e `adicionarDesconto` permitem adicionar novos produtos e aplicar descontos, respectivamente. Esse contexto permite que diferentes partes da aplicação acessem e modifiquem o estado global da loja.
+
+#### 7. **Componente Principal (`App`):**
+
+```javascript
+import React, { useContext } from 'react';
+import { LojaContext, LojaProvider } from './LojaContext';
+import Product from './components/Product/Product';
+import DiscountA from './visitors/DiscountA';
+import DiscountB from './visitors/DiscountB';
+import { ChakraProvider, Button, Box, Grid, GridItem } from '@chakra-ui/react';
+import PageHeader from "./components/PageHeader/index";
+import { theme } from "./styles/theme"
+
+const App = () => {
+    const { produtos, adicionarProduto } = useContext(LojaContext);
+
+    const aplicarDesconto = (produto) => {
+        const discountA = new DiscountA();
+        const discountB = new DiscountB();
+        discountA.visitarProduto(produto);
+        discountB.visitarProduto(produto);
+    };
+
+    return (
+        <ChakraProvider theme={theme}>
+            <PageHeader title="MyMarket"/>
+            <Button onClick={() => adicionarProduto({ nome: 'Camisa', preco: 100 })}>Adicionar Camisa</Button>
+            <Button onClick={() => adicionarProduto({ nome: 'Casaco', preco: 200 })}>Adicionar Casaco</Button>
+
+            <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+                
+                    {produtos.map((produto, index) => (
+                        <GridItem key={index}>
+                            <Product key={index} nome={produto.nome} preco={produto.preco} onApplyDiscount={() => aplicarDesconto(produto)} />
+                        </GridItem>))
+                    }
+            </Grid>
+            <Box display="flex" flexDirection="row" alignItems="center">
+                
+            </Box>
+        </ChakraProvider>
+        
+    );
+};
+
+export default function WrappedApp() {
+    return (
+        <LojaProvider>
+            <App />
+        </LojaProvider>
+    );
+}
+```
+
+O componente `App` é o principal da aplicação e utiliza o contexto da loja para adicionar produtos e aplicar descontos. O componente exibe os produtos em uma grade e permite que o usuário adicione novos produtos e aplique descontos utilizando os visitantes `DiscountA` e `DiscountB`. O uso do `ChakraProvider` aplica o tema visual, e o `WrappedApp` envolve o `App` no `LojaProvider` para garantir que o contexto da loja esteja disponível em toda a aplicação.
+
+Ao Rodar o código usando o comando **npm start** o código será compilado e irá rodar no servidor de desenvolvimento(normalmente **http://localhost:3000**), a imagem abaixo mostra como o servidor deve funcionar, o vídeo mostrando o código explica como ele funciona, ele permite o usuario criar casacos e camisas e aplicar descontos nesses 
+
+ ![demostração](./src/fig1.jpeg)
+<h6 align = "center">Figura 2: Demostração do código rodando </h6>
+
+
+
 
 | Versão | Alteração |  Responsável  | Revisor | Data de realização | Data de revisão |
 | :------: | :---: | :-----: | :----: | :----: | :-----: |
 | 1.0    | Inicio da estrutura do documento | [RodrigoWright](https://github.com/RodrigoWright) | [Guilherme Oliveira](https://github.com/GG555-13) | 15/08/2024 | 15/08/2024 |
+| 1.1    | Adicionando versionamento e gravação do vídeo | [Guilherme Oliveira](https://github.com/GG555-13)  | [RodrigoWright](https://github.com/RodrigoWright) | 16/08/2024 | 16/08/2024 |
