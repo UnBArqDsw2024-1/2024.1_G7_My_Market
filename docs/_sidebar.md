@@ -48,7 +48,13 @@
 - **Arquitetura de Software & Reutilização**
   - [4. Desenho de Software (Arquitetura & Reutilização de Software)](/ArquiteturaReutilizacao/4.ArquiteturaReutilizacao.md)
     - [4.1. Módulo Estilos e Padrões Arquiteturais](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md)
+      - [4.1.0 DAS](/ArquiteturaReutilizacao/4.1.0.DAS.md)
+      - [4.1.1 Sumário DAS Individual](/ArquiteturaReutilizacao/4.1.1.sumario.md)
     - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
+      - [4.2.1 Visão Externa](/ArquiteturaReutilizacao/4.2.1.VisaoExterna.md)
+      - [4.2.2 Validador de CPF](/ArquiteturaReutilizacao/4.2.2.CPFValidador.md)
+      - [4.2.3 ChainsOfResponsibility](/ArquiteturaReutilizacao/4.2.3.ChainsOfResponsibility.md)
+      - [4.2.2 Obsrver](/ArquiteturaReutilizacao/4.2.4.Observer.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
 
 - **Atas de Reunião**
