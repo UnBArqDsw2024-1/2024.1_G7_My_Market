@@ -108,7 +108,7 @@ A Visão de Implementação detalha a organização do sistema em termos de mód
 ### 6.1 Diagrama de Componentes
 
 O diagrama de Componentes pode ser visualizado abaixo:
-<div align = "center"><img src="" alt="Diagrama de Implementação">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_DiagramaDeComponentes_DAS%20.png" alt="Diagrama de Componentes">
 <p>Figura 6 - Diagrama de Componentes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
 
 ### 6.2 Explicação dos Componentes do Chatbot
@@ -136,7 +136,7 @@ Os diagramas de implantação são fundamentais para arquitetos de software e en
 
 Este documento apresenta a arquitetura de implantação de um sistema distribuído, com ênfase em eficiência, segurança e escalabilidade. O sistema é organizado em vários nós principais: Cliente, Proxy, Web Server e Database, cada um contendo componentes e entidades específicas. Vale ressaltar que o diagrama foi criado sem a definição completa das tecnologias a serem utilizadas e pode ser ajustado conforme as decisões do grupo evoluem.
 
-<div align = "center"><img src="" alt="Diagrama de implantação" alt="Diagrama de implantação">
+<div align = "center"><img src="https://raw.githubusercontent.com/UnBArqDsw2024-1/2024.1_G7_My_Market/main/docs/Imagens/Diagramas/Miguel_GuilhermeB_DiagramaDeImplantacao_DAS.png" alt="Diagrama de implantação" alt="Diagrama de implantação">
 <p>Figura 7 - Diagrama de Implantação<br> Autor: Guilherme Basilio e Miguel de Frias </p></div>
 
 ## 7. Arquitetura de Implantação
