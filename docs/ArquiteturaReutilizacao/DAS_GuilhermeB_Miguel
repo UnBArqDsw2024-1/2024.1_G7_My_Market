@@ -105,9 +105,27 @@ A visão de processo detalha como as atividades fundamentais do chatbot de atend
 
 A Visão de Implementação detalha a organização do sistema em termos de módulos e pacotes de código. Ela ilustra como os componentes estão estruturados e como interagem entre si para garantir uma implementação eficiente.
 
+### 6.1 Diagrama de Componentes
+
 O diagrama de Componentes pode ser visualizado abaixo:
 <div align = "center"><img src="" alt="Diagrama de Implementação">
 <p>Figura 6 - Diagrama de Componentes<br> Autor: Guilherme Basilio e Miguel de Frias</p></div>
+
+### 6.2 Explicação dos Componentes do Chatbot
+
+#### Chatbot Engine:
+
+- Dialogue Management: Gerencia o fluxo de conversa e o estado da interação com o usuário.
+- Intent Recognition: Identifica a intenção do usuário com base nas entradas fornecidas.
+- Response Generation: Gera respostas adequadas com base nas intenções identificadas.
+
+#### Integration APIs:
+
+- User Data API: Interface para acessar e manipular dados de usuários.
+- Product Data API: Interface para acessar e manipular dados de produtos.
+- Order Data API: Interface para acessar e manipular dados de pedidos.
+
+Esses componentes permitem que o chatbot interaja com o sistema existente de forma eficaz, acessando dados relevantes e realizando operações necessárias para atender às solicitações dos usuários.
 
 
 ## 7. Visão de Implantação
