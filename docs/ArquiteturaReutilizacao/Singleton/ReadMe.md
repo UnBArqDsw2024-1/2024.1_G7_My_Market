@@ -10,6 +10,8 @@ O padrão Singleton garante que uma classe tenha apenas uma instância e fornece
 
 Neste sentido, criaremos uma única instância para gerenciar o carrinho de compras de um usuário:
 
+[Link de demostração do Código](https://youtu.be/rmgCV09dt1M)
+
 ### 1. Classe **CarrinhoDeCompras**
 
 A classe CarrinhoDeCompras, apresentada abaixo na figura 01, define os métodos que gerenciam os itens no carrinho de compras.
@@ -61,3 +63,4 @@ Para testar o gerenciador de carrinho de compras, fizemos o teste apresentado ab
 | 1.0   | Adaptação do código de gerenciamento de carrinho de compras para o contexto do projeto | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
 | 2.0   | Documentação do código do gerenciador de carrinho de compras | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
 | 2.1   | Adição das imagens ao documento | Pedro Henrique Bragança | Guilherme Nishimura | 15/08/2024 |
+| 2.2   | Adição o Vídeo de demostração do código | Guilherme Oliveira | Rodrigo Wright | 16/08/2024 |
