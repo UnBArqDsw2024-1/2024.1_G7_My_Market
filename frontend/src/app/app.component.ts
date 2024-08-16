@@ -1,21 +1,18 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
+
+import { HeaderComponent } from './shared/header/header.component';
 
 @Component({
   selector: 'app-root',
+  styles: [],
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    `,
   standalone: true,
-  imports: [
-    MatToolbarModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    RouterOutlet
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, HeaderComponent]
 })
 export class AppComponent {
-  title = 'MyMarket';
+  title = 'angular-shop';
 }
