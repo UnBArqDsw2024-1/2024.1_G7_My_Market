@@ -58,6 +58,7 @@
       - [4.2.3 ChainsOfResponsibility](/ArquiteturaReutilizacao/4.2.3.ChainsOfResponsibility.md)
       - [4.2.2 Obsrver](/ArquiteturaReutilizacao/4.2.4.Observer.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
+    - [4.4. Entrega Extra](/ArquiteturaReutilizacao/4.4.EntregaExtra.md)
 
 - **Atas de Reunião**
   - [03/04/2024](/Atas/03_04_2024.md)
