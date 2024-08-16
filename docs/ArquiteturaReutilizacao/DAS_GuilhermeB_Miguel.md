@@ -1,4 +1,4 @@
-# Documento de Arquitetura de Software (DAS) - Sistema de Gerenciamento de Estoque e Inventário
+# Documento de Arquitetura de Software (DAS) - Chatbot de Atendimento
 
 ## O documento em questão foi criado e desenvolvido pelos alunos [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)
 
@@ -184,4 +184,4 @@ A arquitetura descrita para o sistema de chatbot de atendimento oferece uma solu
 | `1.0`  | 12/08/2024 | Criação da estrutura do artefato |  [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)| [Miguel de Frias](https://github.com/migueldefrias) |
 | `2.0`  | 12/08/2024 | Desenvolvimento do Artefato | [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES) | [Miguel de Frias](https://github.com/migueldefrias) |
 | `3.0`  | 12/08/2024 | Adição do diagrama de Casos de Uso | [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES)| [Miguel de Frias](https://github.com/migueldefrias) |
-| `4.0`  | 15/08/2024 | Adição dos diagramas restantes | [Miguel de Frias](https://github.com/migueldefrias)  | [Guilherme Basilio](https://github.com/GuilhermeBES)|
+| `4.0`  | 15/08/2024 | Adição dos diagramas restantes | [Miguel de Frias](https://github.com/migueldefrias) e [Guilherme Basilio](https://github.com/GuilhermeBES) | [Guilherme Basilio](https://github.com/GuilhermeBES)|
